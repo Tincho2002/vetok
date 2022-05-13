@@ -466,7 +466,7 @@ ul li:hover ul {
 .promociones__card {
     margin-top: 35px;
     box-shadow: -25px 25px 25px rgb(236, 220, 144);
-    transform: skewY(-5deg)
+    transform: skewY(-4deg)
 }
 
 .promociones__img {
