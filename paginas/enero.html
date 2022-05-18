@@ -8,12 +8,14 @@
     <link rel="shortcut icon" href="../recursos/logo-menu.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Enero 2022</title>
 </head>
 
 <body>
-    <header class="header__home">
+    <header>
+        <!--class="header__home">
         <nav class="header__navegacion">
             <a class="header__logo"><img class="header__logoimg" src="../recursos/logov-footer.png " alt="logo " /></a>
             <ul class="header__menu">
@@ -39,17 +41,73 @@
                 <li><a class="header__links" href="contacto.html ">Contacto</a></li>
             </ul>
             <a class="header__usuario" href="../paginas/ingresar.html "><img src="../recursos/usuario1.png " alt="usuario " /></a>
+        </nav>-->
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/logov-menu.png" alt="" width="95" height="55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/vetok.html">VET-OK!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Promociones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="../paginas/promociones.html">Promos</a></li>
+                                <li><a class="dropdown-item" href="../paginas/alimentos.html">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="../paginas/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="../paginas/guardería.html">Guardería</a></li>
+                                <li><a class="dropdown-item" href="../paginas/beauty.html">Beauty</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Newsletter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="../paginas/newsletter.html">Calendario</a></li>
+                                <li><a class="dropdown-item" href="../paginas/enero.html">Enero 2022</a></li>
+                                <li><a class="dropdown-item" href="../paginas/febrero.html">Febrero 2022</a></li>
+                                <li><a class="dropdown-item" href="../paginas/marzo.html">Marzo 2022</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__usuario" href="../paginas/ingresar.html">
+                    <img src="../recursos/usuario1.png" alt="" width="50" height="50">
+                </a>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="section__enei">
+        <!--<section class="section__enei">
             <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="foto logo" />
-        </section>
+        </section>-->
         <article class="article__contenido">
             <a class="newsletter__title" href="../paginas/newsletter.html">
                 <h1>NEWSLETTER</h1>
             </a>
-            <div>
+            <div class="clearfix">
+                <img src="../recursos/chapa.jpg" class="col-md-5 float-md-end mb-3 ms-md-3" alt="...">
                 <h2>ENERO 2022</h2>
                 <h3>Los 5 Pilares para un ambiente felino saludable</h3>
                 <h4>1. Proporcionar un lugar seguro</h4>
@@ -70,6 +128,9 @@
                     u otros recipientes, fuentes o grifos que gotean, pero, en cualquier caso, el agua debe ser fresca.</p>
                 <p>El gato puede compartir los recursos con otros gatos con los que ha establecido un vínculo de afiliación y pertenecen al mismo grupo social, pero siempre es necesario que exista una separación física entre los diferentes recursos, (por
                     ejemplo, el agua no debe estar al lado de la comida), y cada gato necesita como mínimo un comedero.</p>
+            </div>
+            <div class="clearfix">
+                <img src="../recursos/rascadores.jpeg" class="col-md-5 float-md-end mb-3 ms-md-3" alt="...">
                 <h4>3. Satisfacer sus necesidades ocupacionales</h4>
                 <p>El gato necesita jugar y cazar. La depredación constituye una parte importante de sus actividades diarias. El gato debe poder reproducir todas las fases de la secuencia de depredación: localización, acecho, salto, muerte de la presa e
                     ingesta de la misma. En el contexto del hogar, esta secuencia se traslada al comportamiento de juego pseudopredatorio y al comportamiento alimentario. Si no se satisfacen estas necesidades el gato puede llegar a aburrirse, frustrarse
@@ -88,6 +149,9 @@
                     frotando su mejilla o arañando, deposita su olor para familiarizarse con ella y, por tanto, estas marcas no deben limpiarse. Colocar varios rascadores robustos (en vertical u horizontal) en toda la casa (especialmente en la entrada)
                     ayuda a proporcionar “seguridad” al gato, de tal manera que así se limita la necesidad de marcar o delimitar su territorio con orina. En muchos países se comercializan feromonas sintéticas similares a las feromonas de las mejillas
                     que pueden servir para proporcionar mayor seguridad al gato.</p>
+            </div>
+            <div class="clearfix">
+                <img src="../recursos/febrero.jpg" class="col-md-5 float-md-end mb-3 ms-md-3" alt="...">
                 <h4>5. Su mundo social</h4>
                 <p>La consistencia y la predictibilidad son las claves para una interacción gato-persona positiva. Tal y como se ha indicado anteriormente, la socialización entre las 2-8 semanas de edad es crítica para que el gato pueda vivir satisfactoriamente
                     con las personas. La atención del propietario es muy importante aunque, generalmente, el gato prefiere una interacción más frecuente y menos intensa de lo que el propietario suele creer. Además, al gato le gusta elegir el momento y
@@ -104,74 +168,95 @@
                 <p>Dr. Guillermo Rivelis<br>VET-OK!</p>
             </div>
         </article>
-        <section class="section__ened">
+        <!--<section class="section__ened">
             <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="foto logo" />
-        </section>
+        </section>-->
     </main>
     <footer>
-        <section class="footer1">
-            <div class="footer1__pack">
-                <p>CONTACTO</p>
-                <li class="footer1__cards">
-                    <a href=" " target="_bank "><img class="footer1__img" src="../recursos/e-mail-footer.png " alt="e-mail " /></a>
-                    <a href="https://www.facebook.com " target="_bank "><img class="footer1__redes" src="../recursos/Facebook.png " alt="facebook " /></a>
-                    <a href="https://www.instagram.com " target="_bank "><img class="footer1__redes" src="../recursos/Instagram.png " alt="instagram " /></a>
-                </li>
-                <li class="footer1__cards">
-                    <a href="https://www.telegram.com " target="_bank "><img class="footer1__redes" src="../recursos/icon-enviar.png " alt="telegram " /></a>
-                    <a href="https://www.twitter.com " target="_bank "><img class="footer1__redes" src="../recursos/Twitter.png " alt="twitter " /></a>
-                    <a href="https://www.whatsapp.com/ " target="_bank "><img class="footer1__redes" src="../recursos/WhatsApp.png " alt="whatsapp " /></a>
-                </li>
-            </div>
-            <div class="footer1__pack">
-                <p>PLANES</p>
-                <div>
-                    <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
-                    <a class="footer1__links" href=" " alt="jovenes-ok! ">Jónenes-OK!</a>
-                    <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer1">
+                        <div class="footer1__pack">
+                            <p>CONTACTO</p>
+                            <li class="footer1__cards">
+                                <a href=" " target="_bank "><img class="footer1__img" src="../recursos/e-mail-footer.png " alt="e-mail " /></a>
+                                <a href="https://www.facebook.com " target="_bank "><img class="footer1__redes" src="../recursos/Facebook.png " alt="facebook " /></a>
+                                <a href="https://www.instagram.com " target="_bank "><img class="footer1__redes" src="../recursos/Instagram.png " alt="instagram " /></a>
+                            </li>
+                            <li class="footer1__cards">
+                                <a href="https://www.telegram.com " target="_bank "><img class="footer1__redes" src="../recursos/icon-enviar.png " alt="telegram " /></a>
+                                <a href="https://www.twitter.com " target="_bank "><img class="footer1__redes" src="../recursos/Twitter.png " alt="twitter " /></a>
+                                <a href="https://www.whatsapp.com/ " target="_bank "><img class="footer1__redes" src="../recursos/WhatsApp.png " alt="whatsapp " /></a>
+                            </li>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>PLANES</p>
+                            <div>
+                                <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
+                                <a class="footer1__links" href=" " alt="jovenes-ok! ">Jónenes-OK!</a>
+                                <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+                            </div>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>NEWSLETTER</p>
+                            <li>
+                                <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="logo " />
+                                <a href="../paginas/newsletter.html " target="_bank "><img class="footer1__img1" src="../recursos/mano.png " alt="mano " /></a>
+                            </li>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>MEIDOS DE PAGO</p>
+                            <li class="footer1__cards ">
+                                <a href=" " target="_bank "><img class="footer1__tjs0" src="../recursos/visa.png " alt="VISA "></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/mastercard.png " alt="MASTER " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/amex.png " alt="AMEX " /></a>
+                            </li>
+                            <li class="footer1__cards ">
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/efectivo.png " alt="EFECTIVO " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/paypal.png " alt="PAYPAL " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/bitcoin.png " alt="BITCOIN " /></a>
+                            </li>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="footer1__pack">
-                <p>NEWSLETTER</p>
-                <li>
-                    <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="logo " />
-                    <a href="../paginas/newsletter.html " target="_bank "><img class="footer1__img1" src="../recursos/mano.png " alt="mano " /></a>
-                </li>
-            </div>
-            <div class="footer1__pack">
-                <p>MEIDOS DE PAGO</p>
-                <li class="footer1__cards ">
-                    <a href=" " target="_bank "><img class="footer1__tjs0" src="../recursos/visa.png " alt="VISA "></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/mastercard.png " alt="MASTER " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/amex.png " alt="AMEX " /></a>
-                </li>
-                <li class="footer1__cards ">
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/efectivo.png " alt="EFECTIVO " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/paypal.png " alt="PAYPAL " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/bitcoin.png " alt="BITCOIN " /></a>
-                </li>
-            </div>
-        </section>
-        <section class="footer2 ">
-            <nav>
-                <div>
-                    <a class="footer2__links" href="../index.html ">Inicio </a>
-                    <a class="footer2__links" href="../paginas/vetok.html ">VET-OK! </a>
-                    <a class="footer2__links" href="../paginas/servicios.html ">Servicios </a>
-                    <a class="footer2__links" href="../paginas/promociones.html ">Promociones </a>
-                    <a class="footer2__links" href="../paginas/planes.html ">Planes </a>
-                    <a class="footer2__links" href="../paginas/newsletter.html ">Newsletter </a>
-                    <a class="footer2__links" href="../paginas/contacto.html ">Contacto </a>
-                    <a class="footer2__links" href="../paginas/términos&condiciones.html ">Términos & Condiciones </a>
-                    <a class="footer2__links" href="../paginas/politicadeprivacidad.html ">Política de Privacidad </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer2 ">
+                        <nav>
+                            <div>
+                                <a class="footer2__links" href="../index.html ">Inicio </a>
+                                <a class="footer2__links" href="../paginas/vetok.html ">VET-OK! </a>
+                                <a class="footer2__links" href="../paginas/servicios.html ">Servicios </a>
+                                <a class="footer2__links" href="../paginas/promociones.html ">Promociones </a>
+                                <a class="footer2__links" href="../paginas/planes.html ">Planes </a>
+                                <a class="footer2__links" href="../paginas/newsletter.html ">Newsletter </a>
+                                <a class="footer2__links" href="../paginas/contacto.html ">Contacto </a>
+                                <a class="footer2__links" href="../paginas/términos&condiciones.html ">Términos & Condiciones </a>
+                                <a class="footer2__links" href="../paginas/politicadeprivacidad.html ">Política de Privacidad </a>
+                            </div>
+                        </nav>
+                    </section>
                 </div>
-            </nav>
-        </section>
-        <section class="footer3 ">
-            <p>&copy; VET-OK! 2022 - Todos los Derechos Reservados- by <a class="footer3__links" href="# "><strong>Proyecto TBB.com</strong></a>
-            </p>
-        </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer3 ">
+                        <p>&copy; VET-OK! 2022 - Todos los Derechos Reservados- by <a class="footer3__links" href="# "><strong>Proyecto TBB.com</strong></a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
+</html>
 
 </html>

@@ -8,12 +8,14 @@
     <link rel="shortcut icon" href="../recursos/logo-menu.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
 
 <body>
-    <header class="header__home">
+    <header>
+        <!--class="header__home">
         <nav class="header__navegacion">
             <a class="header__logo"><img class="header__logoimg" src="../recursos/logov-footer.png " alt="logo " /></a>
             <ul class="header__menu">
@@ -39,10 +41,66 @@
                 <li><a class="header__links" href="contacto.html ">Contacto</a></li>
             </ul>
             <a class="header__usuario" href="../paginas/ingresar.html "><img src="../recursos/usuario1.png " alt="usuario " /></a>
+        </nav>-->
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../recursos/logov-menu.png" alt="" width="95" height="55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/vetok.html">VET-OK!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Promociones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="../paginas/promociones.html">Promos</a></li>
+                                <li><a class="dropdown-item" href="../paginas/alimentos.html">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="../paginas/accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="../paginas/guardería.html">Guardería</a></li>
+                                <li><a class="dropdown-item" href="../paginas/beauty.html">Beauty</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Newsletter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="../paginas/newsletter.html">Calendario</a></li>
+                                <li><a class="dropdown-item" href="../paginas/enero.html">Enero 2022</a></li>
+                                <li><a class="dropdown-item" href="../paginas/febrero.html">Febrero 2022</a></li>
+                                <li><a class="dropdown-item" href="../paginas/marzo.html">Marzo 2022</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="header__usuario" href="../paginas/ingresar.html">
+                    <img src="../recursos/usuario1.png" alt="" width="50" height="50">
+                </a>
+            </div>
         </nav>
+
     </header>
     <main>
-        <section class="copete">
+        <!--        <section class="copete">
             <hgroup>
                 <div>
                     <img src="../recursos/logov-footer.png" alt="logo" />
@@ -154,73 +212,480 @@
 
                 </div>
             </form>
-        </section>
+        </section>-->
+
+
+        <div class="container">
+            <div class="py-5 text-center">
+                <img src="../recursos/logov-menu.png" class="img-rounded" alt="" width="95" height="55"><br><br>
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <p class="lead">Por favor, complete el siguiente formulario con los datos solicitados a continuación.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">PLANES</span>
+                        <span class="badge badge-secondary badge-pill">1</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">CACHORROS-OK!</h6>
+                                <small class="text-muted">hasta 3 años de edad</small>
+                            </div>
+                            <span class="text-muted">$ 500</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">JOVENES-OK!</h6>
+                                <small class="text-muted">De 3 años a 6 años de edad </small>
+                            </div>
+                            <span class="text-muted">$ 550</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">ADULTOS-OK!</h6>
+                                <small class="text-muted">más de 6 años de edad</small>
+                            </div>
+                            <span class="text-muted">$ 700</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">GRUPALES</h6>
+                                <small class="text-muted">Consultar</small>
+                            </div>
+                            <span class="text-muted">$ xxx</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Código de Descuento</h6>
+                                <small>Código</small>
+                            </div>
+                            <span class="text-success">- $</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total ($)</span>
+                            <strong>$</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary">Confirmar Plan</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h4 class="d-flex justify-content-between align-items-center mb-3"></h4>
+
+                    <h4 class="d-flex justify-content-between align-items-center mb-3"></h4>
+
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">PROMOCIONES</span>
+                        <span class="badge badge-secondary badge-pill">2</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PACK 1</h6>
+                                <small class="text-muted">Alimentos</small>
+                            </div>
+                            <span class="text-muted">Húmedos y Secos</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PACK 2</h6>
+                                <small class="text-muted">Accesorios</small>
+                            </div>
+                            <span class="text-muted">Varios</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PACK 3</h6>
+                                <small class="text-muted">Guardería</small>
+                            </div>
+                            <span class="text-muted">Consultar</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PACK 4</h6>
+                                <small class="text-muted">Beauty</small>
+                            </div>
+                            <span class="text-muted">Consultar</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Suma de Puntos</h6>
+                                <small>Código</small>
+                            </div>
+                            <span class="text-success">Puntos xxx</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (puntos)</span>
+                            <strong>Acumulado xxx</strong>
+                        </li>
+                    </ul>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary">Confirmar Promo</button>
+                            </div>
+                        </div>
+                    </form>
+                    <h4 class="d-flex justify-content-between align-items-center mb-3"></h4>
+
+                    <h4 class="d-flex justify-content-between align-items-center mb-3"></h4>
+
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">CODIGO</span>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PLAN</h6>
+                                <small class="text-muted"></small>
+                            </div>
+                            <span class="text-muted">PLAN-OK!</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PLAN2</h6>
+                                <small class="text-muted"></small>
+                            </div>
+                            <span class="text-muted">PLAN2-OK!</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PROMO</h6>
+                                <small class="text-muted"></small>
+                            </div>
+                            <span class="text-muted">PROMO-OK!</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">PROMO2</h6>
+                                <small class="text-muted"></small>
+                            </div>
+                            <span class="text-muted">PROMO2-OK!</span>
+                        </li>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">DATOS PERSONALES</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">NOMBRE</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Ingrese su Nombre.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">APELLIDO</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Ingrese su Apellido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="usuario">USUARIO</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="usuario" placeholder="usuario" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Ingrese su Usuario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="abc@gmail.com">
+                            <div class="invalid-feedback">
+                                Ingrese su correo electronico.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dirección">Dirección</label>
+                            <input type="text" class="form-control" id="dirección" placeholder="Calle número" required>
+                            <div class="invalid-feedback">
+                                Ingrese su Dirección.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dirección2">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+                            <input type="text" class="form-control" id="dirección2" placeholder="Piso Departamento">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="país">Zona / Barrio</label>
+                                <select class="custom-select d-block w-100" id="país" required>
+                                        <option value="">Otro...</option>
+                                        <option>Norte</option>
+                                        <option>Centro</option>
+                                        <option>Macrocentro</option>
+                                        <option>Sur</option>
+                                        <option>Oeste</option>
+                                        <option>Este (Zona del Río)</option>
+                                    </select>
+                                <div class="invalid-feedback">
+                                    Ingrese su Zona o Barrio.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="BirthDate">Fecha Nacimiento (dd/mm/aaaa):</label>
+                                <input type="date" name="Birthdate" class="form-control" id="Birthdate" placeholder="dd/mm/aaaa" required></input>
+                                <div class="invalid-feedback" style="width: 100%">
+                                    Ingrese fecha de nacimiento.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="identificacion">Tipo de Identificación</label>
+                                <select class="custom-select d-block w-100" id="identificacion" required>
+                                        <option value="">Otro...</option>
+                                        <option>DNI</option>
+                                        <option>PASAPORTE</option>
+                                    </select>
+                                <div class="invalid-feedback">
+                                    Ingrese su Tipo de Identificación.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="numero">N° de Identificación</label>
+                                <input type="text" class="form-control" id="numero" placeholder="Número" required>
+                                <div class="invalid-feedback">
+                                    Ingrese su Número de Identificación.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="Mascota">Mascota</label>
+                                <select class="custom-select d-block w-100" id="Mascota" placeholder="">
+                                        <option value="">Otro...</option>
+                                        <option>Perro</option>
+                                        <option>Gato</option>
+                                        <option>Roedor</option>
+                                        <option>Ave</option>
+                                        <option>Peces</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cantidad">Consulta</label>
+                                <select class="custom-select d-block w-100" id="Cantidad" placeholder="">
+                                        <option value="">Otro..</option>
+                                        <option>Turnos</option>
+                                        <option>Cardiología</option>
+                                        <option>Controles</option>
+                                        <option>Vacunación</option>
+                                        <option>Taxi-Mascota</option>
+                                        <option>Emergencias</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Género</h5>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="masculino" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="masculino">Masculino</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="femenino" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="femenino">Femenino</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="no binario" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="no binario">No Binario</label>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-info">
+                            <label class="custom-control-label" for="same-info">Deseo recibir información regularmente</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Guardar esta información para la próxima vez</label>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Su Pago</h4>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="crédito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="crédito">Tarjeta de Crédito</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="débito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="débito">Tarjeta de Débito</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Nombre de la Tarjeta de Crédito/Débito</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted"></small>
+                                <div class="invalid-feedback">
+                                    Nombre y Apellido tal como lo consigna en el frente de la tarjeta.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Número de Tarjeta</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Ingrese el nro. de la tarjeta.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Fecha de Vencimiento</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Ingrese Fecha de Expiración.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">Código de Seguridad</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Ingrese los tres (3) dígitos del Código de Seguridad.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="forma de pago">Forma de Pago</label><br><br>
+                                <select class="custom-select d-block w-100" id="forma de pago" required>
+                                        <option value="">Otro...</option>
+                                        <option>Débito -20% dto-</option>
+                                        <option>1 Cuota</option>
+                                        <option>2 Cuotas</option>
+                                        <option>3 Cuotas</option>
+                                        <option>4 Cuotas</option>
+                                        <option>5 Cuotas</option>
+                                        <option>6 Cuotas</option>
+                                        <option>7 Cuotas</option>
+                                        <option>8 Cuotas</option>
+                                        <option>9 Cuotas</option>
+                                        <option>10 Cuotas</option>
+                                        <option>11 Cuotas</option>
+                                        <option>12 Cuotas</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Ingrese Forma de Pago.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentario">Comentario <span class="text-muted">(Opcional)</span></label>
+                            <input type="comentario" class="form-control" id="text" placeholder="Comentario">
+                            <div class="invalid-feedback">
+                                Ingrese su comentario.
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">ENVIAR</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="reset">RESET</button>
+                    </form>
+                </div>
+            </div>
+            <p>Ya estás registrado? <a href="formulario.html">Formulario de Registro</a></p>
+            <img class="form__img" src="../recursos/duo2.jpg" alt="foto duo3" />
     </main>
 
     <footer>
-        <section class="footer1">
-            <div class="footer1__pack">
-                <p>CONTACTO</p>
-                <li class="footer1__cards">
-                    <a href=" " target="_bank "><img class="footer1__img" src="../recursos/e-mail-footer.png " alt="e-mail " /></a>
-                    <a href="https://www.facebook.com " target="_bank "><img class="footer1__redes" src="../recursos/Facebook.png " alt="facebook " /></a>
-                    <a href="https://www.instagram.com " target="_bank "><img class="footer1__redes" src="../recursos/Instagram.png " alt="instagram " /></a>
-                </li>
-                <li class="footer1__cards">
-                    <a href="https://www.telegram.com " target="_bank "><img class="footer1__redes" src="../recursos/icon-enviar.png " alt="telegram " /></a>
-                    <a href="https://www.twitter.com " target="_bank "><img class="footer1__redes" src="../recursos/Twitter.png " alt="twitter " /></a>
-                    <a href="https://www.whatsapp.com/ " target="_bank "><img class="footer1__redes" src="../recursos/WhatsApp.png " alt="whatsapp " /></a>
-                </li>
-            </div>
-            <div class="footer1__pack">
-                <p>PLANES</p>
-                <div>
-                    <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
-                    <a class="footer1__links" href=" " alt="jovenes-ok! ">Jónenes-OK!</a>
-                    <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer1">
+                        <div class="footer1__pack">
+                            <p>CONTACTO</p>
+                            <li class="footer1__cards">
+                                <a href=" " target="_bank "><img class="footer1__img" src="../recursos/e-mail-footer.png " alt="e-mail " /></a>
+                                <a href="https://www.facebook.com " target="_bank "><img class="footer1__redes" src="../recursos/Facebook.png " alt="facebook " /></a>
+                                <a href="https://www.instagram.com " target="_bank "><img class="footer1__redes" src="../recursos/Instagram.png " alt="instagram " /></a>
+                            </li>
+                            <li class="footer1__cards">
+                                <a href="https://www.telegram.com " target="_bank "><img class="footer1__redes" src="../recursos/icon-enviar.png " alt="telegram " /></a>
+                                <a href="https://www.twitter.com " target="_bank "><img class="footer1__redes" src="../recursos/Twitter.png " alt="twitter " /></a>
+                                <a href="https://www.whatsapp.com/ " target="_bank "><img class="footer1__redes" src="../recursos/WhatsApp.png " alt="whatsapp " /></a>
+                            </li>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>PLANES</p>
+                            <div>
+                                <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
+                                <a class="footer1__links" href=" " alt="jovenes-ok! ">Jónenes-OK!</a>
+                                <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+                            </div>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>NEWSLETTER</p>
+                            <li>
+                                <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="logo " />
+                                <a href="../paginas/newsletter.html " target="_bank "><img class="footer1__img1" src="../recursos/mano.png " alt="mano " /></a>
+                            </li>
+                        </div>
+                        <div class="footer1__pack">
+                            <p>MEIDOS DE PAGO</p>
+                            <li class="footer1__cards ">
+                                <a href=" " target="_bank "><img class="footer1__tjs0" src="../recursos/visa.png " alt="VISA "></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/mastercard.png " alt="MASTER " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/amex.png " alt="AMEX " /></a>
+                            </li>
+                            <li class="footer1__cards ">
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/efectivo.png " alt="EFECTIVO " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/paypal.png " alt="PAYPAL " /></a>
+                                <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/bitcoin.png " alt="BITCOIN " /></a>
+                            </li>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <div class="footer1__pack">
-                <p>NEWSLETTER</p>
-                <li>
-                    <img class="footer1__imglogo1" src="../recursos/logov-footer.png " alt="logo " />
-                    <a href="../paginas/newsletter.html " target="_bank "><img class="footer1__img1" src="../recursos/mano.png " alt="mano " /></a>
-                </li>
-            </div>
-            <div class="footer1__pack">
-                <p>MEIDOS DE PAGO</p>
-                <li class="footer1__cards ">
-                    <a href=" " target="_bank "><img class="footer1__tjs0" src="../recursos/visa.png " alt="VISA "></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/mastercard.png " alt="MASTER " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs" src="../recursos/amex.png " alt="AMEX " /></a>
-                </li>
-                <li class="footer1__cards ">
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/efectivo.png " alt="EFECTIVO " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/paypal.png " alt="PAYPAL " /></a>
-                    <a href=" " target="_bank "><img class="footer1__tjs1" src="../recursos/bitcoin.png " alt="BITCOIN " /></a>
-                </li>
-            </div>
-        </section>
-        <section class="footer2 ">
-            <nav>
-                <div>
-                    <a class="footer2__links" href="../index.html ">Inicio </a>
-                    <a class="footer2__links" href="../paginas/vetok.html ">VET-OK! </a>
-                    <a class="footer2__links" href="../paginas/servicios.html ">Servicios </a>
-                    <a class="footer2__links" href="../paginas/promociones.html ">Promociones </a>
-                    <a class="footer2__links" href="../paginas/planes.html ">Planes </a>
-                    <a class="footer2__links" href="../paginas/newsletter.html ">Newsletter </a>
-                    <a class="footer2__links" href="../paginas/contacto.html ">Contacto </a>
-                    <a class="footer2__links" href="../paginas/términos&condiciones.html ">Términos & Condiciones </a>
-                    <a class="footer2__links" href="../paginas/politicadeprivacidad.html ">Política de Privacidad </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer2 ">
+                        <nav>
+                            <div>
+                                <a class="footer2__links" href="../index.html ">Inicio </a>
+                                <a class="footer2__links" href="../paginas/vetok.html ">VET-OK! </a>
+                                <a class="footer2__links" href="../paginas/servicios.html ">Servicios </a>
+                                <a class="footer2__links" href="../paginas/promociones.html ">Promociones </a>
+                                <a class="footer2__links" href="../paginas/planes.html ">Planes </a>
+                                <a class="footer2__links" href="../paginas/newsletter.html ">Newsletter </a>
+                                <a class="footer2__links" href="../paginas/contacto.html ">Contacto </a>
+                                <a class="footer2__links" href="../paginas/términos&condiciones.html ">Términos & Condiciones </a>
+                                <a class="footer2__links" href="../paginas/politicadeprivacidad.html ">Política de Privacidad </a>
+                            </div>
+                        </nav>
+                    </section>
                 </div>
-            </nav>
-        </section>
-        <section class="footer3 ">
-            <p>&copy; VET-OK! 2022 - Todos los Derechos Reservados- by <a class="footer3__links" href="# "><strong>Proyecto TBB.com</strong></a>
-            </p>
-        </section>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <section class="footer3 ">
+                        <p>&copy; VET-OK! 2022 - Todos los Derechos Reservados- by <a class="footer3__links" href="# "><strong>Proyecto TBB.com</strong></a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="form-validation.js"></script>
+</body>
 </body>
 
 </html>
