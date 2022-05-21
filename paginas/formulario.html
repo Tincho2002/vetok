@@ -15,33 +15,6 @@
 
 <body>
     <header>
-        <!--class="header__home">-->
-        <!-- <nav class="header__navegacion">
-            <a class="header__logo"><img class="header__logoimg" src="../recursos/logov-footer.png " alt="logo " /></a>
-            <ul class="header__menu">
-                <li><a class="header__links" href="../index.html ">Inicio</a></li>
-                <li><a class="header__links" href="vetok.html ">VET-OK!</a></li>
-                <li><a class="header__links" href="servicios.html ">Servicios</a></li>
-                <li><a class="header__links" href="promociones.html ">Promociones</a>
-                    <ul class="header__submenu">
-                        <li><a class="header__sublinks" href="../paginas/alimentos.html ">Alimentos</a></li>
-                        <li><a class="header__sublinks" href="../paginas/accesorios.html ">Accesorios</a></li>
-                        <li><a class="header__sublinks" href="../paginas/guardería.html ">Guardería</a></li>
-                        <li><a class="header__sublinks" href="../paginas/beauty.html ">Beauty</a></li>
-                    </ul>
-                </li>
-                <li><a class="header__links" href="planes.html ">Planes</a></li>
-                <li><a class="header__links" href="newsletter.html ">Newsletter</a>
-                    <ul class="header__submenu">
-                        <li><a class="header__sublinks" href="../paginas/enero.html ">Enero 2022</a></li>
-                        <li><a class="header__sublinks" href="../paginas/febrero.html ">Febrero 2022</a></li>
-                        <li><a class="header__sublinks" href="../paginas/marzo.html ">Marzo 2022</a></li>
-                    </ul>
-                </li>
-                <li><a class="header__links" href="contacto.html ">Contacto</a></li>
-            </ul>
-            <a class="header__usuario" href="../paginas/ingresar.html "><img src="../recursos/usuario1.png " alt="usuario " /></a>
-        </nav>-->
         <nav class="navbar navbar-expand-lg navbar-black bg-black">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -62,7 +35,7 @@
                             <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Promociones
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -77,7 +50,7 @@
                             <a class="nav-link" href="../paginas/planes.html">Planes</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Newsletter
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -99,118 +72,12 @@
         </nav>
     </header>
     <main>
-        <!--<section class="copete">
-            <hgroup>
-                <div>
-                    <img src="../recursos/logov-footer.png" alt="logo" />
-                    <img src="../recursos/usuario1.png" alt="usuario" />
-                </div>
-            </hgroup>
-        </section>
-        <section class="form">
-            <h1>FORMULARIO DE REGISTRO</h1>
-            <form action="" class="form__landing-page" method="post">
-                <div>
-                    <input class="form__input" type="text" name="name_contact" required placeholder="Ingresa tu nombre y apellido">
-                </div>
-                <div>
-                    <input class="form__input" type="email" name="email_contact" required placeholder="Ingresa tu email">
-                </div>
-                <div>
-                    <input class="form__input" type="text" name="clave_contact" required placeholder="Ingresa tu clave numérica">
-                </div>
-                <div>
-                    <input class="form__input" type="text" name="direccion_contact" required placeholder="Ingresa tu dirección">
-                </div>
-                <div>
-                    <input class="form__input" type="number" name="piso_contact" required placeholder="Ingresa tu piso">
-                </div>
-                <div>
-                    <input class="form__input" type="number" name="departamento_contact" required placeholder="Ingresa tu departamento">
-                </div>
-                <div>
-                    <input class="form__input" type="text" name="ciudad_contact" required placeholder="Ingresa tu ciudad">
-                </div>
-                <div>
-                    <input class="form__input" type="text" name="provincia_contact" required placeholder="Ingresa tu provincia">
-                </div>
-                <div>
-                    <input class="form__input" type="number" name="codigo_contact" required placeholder="Ingresa tu código postal">
-                </div>
-                <div>
-                    <input class="form__input" type="text" name="pais_contact" required placeholder="Ingresa tu país">
-                </div>
-                <p>Fecha de Nacimiento</p>
-                <div>
-                    <input class="form__input" type="date" name="nacimiento_contact" required placeholder="">
-                </div>
-                <p class="">Género (Radio)
-                    <div>
-                        <a class="form__genero">
-                            <input class="form__select" type="radio" name="gender" value="Hombre" checked>
-                            <p>Hombre</p>
-                        </a>
-                        <a class="form__genero">
-                            <input class="form__select" type="radio" name="gender" value="Mujer">
-                            <p>Mujer</p>
-                        </a>
-                        <a class="form__genero">
-                            <input class="form__select" type="radio" name="gender" value="No Binario">
-                            <p>No Binario</p>
-                        </a>
-                    </div>
-                </p>
-                <label for="Consulta">Consulta: (Select)</label>
-                <div>
-                    <select class="form__input" required>
-                    <option value="perro">perro</option>
-                    <option value="gato">gato</option>
-                    <option value="roedor">roedor</option>
-                    <option value="ave">ave</option>
-                    <option value="peces">peces</option>
-                    <option value="otro">otro</option>
-                    </select>
-                </div>
-                <p>Mascota (Checkbox)
-                    <label for="Consulta">Consulta: (Select)</label>
-                    <div>
-                        <a class="form__cantidad">
-                            <input class="form__select" type="checkbox" name="mascota" value="uno" checked>
-                            <p>Uno</p>
-                        </a>
-                        <a class="form__cantidad">
-                            <input class="form__select" type="checkbox" name="mascota" value="dos">
-                            <p>Dos</p>
-                        </a>
-                        <a class="form__cantidad">
-                            <input class="form__select" type="checkbox" name="mascota" value="tres">
-                            <p>Tres</p>
-                        </a>
-                        <a class="form__cantidad">
-                            <input class="form__select" type="checkbox" name="mascota" value="más de tres">
-                            <p>+ Tres</p>
-                    </div>
-                </p>
-                <label for="comentarios">Comentarios:</label>
-                <textarea name="comentarios" rows="15" cols="200"></textarea>
-                <p>Ya estás registrado? <a href="contacto.html">Formulario de Contacto</a></p>
-                <img class="form__img" src="../recursos/duo.jpg" alt="foto duo3" />
-                <div>
-                    <button class="formulario__botton" type="submit">Enviar</button>
-                    <button class="formulario__botton" type="reset">Reset</button>
-
-                </div>
-            </form>
-        </section>-->
-
-
         <div class="container">
             <div class="py-5 text-center">
-                <img src="../recursos/logov-menu.png" class="img-rounded" alt="" width="95" height="55"><br><br>
+                <img src="../recursos/logov-menu.png" class="img-rounded" alt="" width="95" height="55">
                 <h2>FORMULARIO DE REGISTRO</h2>
                 <p class="lead">Por favor, complete el siguiente formulario con los datos solicitados a continuación.</p>
             </div>
-
             <div class="row">
                 <div class="col-md-4 order-md-2 mb-4">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -258,7 +125,6 @@
                             <strong>$</strong>
                         </li>
                     </ul>
-
                     <form class="card p-2">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Código">
@@ -275,7 +141,6 @@
                         <span class="text-muted">PROMOCIONES</span>
                         <span class="badge badge-secondary badge-pill">2</span>
                     </h4>
-
                     <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
@@ -382,7 +247,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="mb-3">
                             <label for="usuario">USUARIO</label>
                             <div class="input-group">
@@ -395,7 +259,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="mb-3">
                             <label for="email">Email <span class="text-muted">(Opcional)</span></label>
                             <input type="email" class="form-control" id="email" placeholder="abc@gmail.com">
@@ -403,7 +266,6 @@
                                 Ingrese su correo electronico.
                             </div>
                         </div>
-
                         <div class="mb-3">
                             <label for="dirección">Dirección</label>
                             <input type="text" class="form-control" id="dirección" placeholder="Calle número" required>
@@ -426,7 +288,7 @@
                                         <option>Sur</option>
                                         <option>Oeste</option>
                                         <option>Este (Zona del Río)</option>
-                                    </select>
+                                </select>
                                 <div class="invalid-feedback">
                                     Ingrese su Zona o Barrio.
                                 </div>
@@ -444,7 +306,7 @@
                                         <option value="">Otro...</option>
                                         <option>DNI</option>
                                         <option>PASAPORTE</option>
-                                    </select>
+                                </select>
                                 <div class="invalid-feedback">
                                     Ingrese su Tipo de Identificación.
                                 </div>
@@ -465,7 +327,7 @@
                                         <option>Roedor</option>
                                         <option>Ave</option>
                                         <option>Peces</option>
-                                    </select>
+                                </select>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="cantidad">Cantidad</label>
@@ -474,8 +336,7 @@
                                         <option>Uno (1)</option>
                                         <option>Dos (2)</option>
                                         <option>Tres (3)</option>
-                                        
-                                    </select>
+                                </select>
                             </div>
                         </div>
                         <h5 class="mb-3">Género</h5>
@@ -563,7 +424,7 @@
                                         <option>10 Cuotas</option>
                                         <option>11 Cuotas</option>
                                         <option>12 Cuotas</option>
-                                    </select>
+                                </select>
                                 <div class="invalid-feedback">
                                     Ingrese Forma de Pago.
                                 </div>
@@ -577,8 +438,8 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">ENVIAR</button>
-                        <button class="btn btn-primary btn-lg btn-block" type="reset">RESET</button>
+                        <button class="btn btn-dark btn-lg btn-block" type="submit">ENVIAR</button>
+                        <button class="btn btn-dark btn-lg btn-block" type="reset">RESET</button>
                     </form>
                 </div>
             </div>
