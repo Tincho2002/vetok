@@ -403,48 +403,36 @@ footer {
     /*con una duración de 0.5s*/
     transition-timing-function: ease-in;
     /*inicio lento, luego normal*/ }
+  .grid__1, .grid__2, .grid__4, .grid__5, .grid__7, .grid__8, .grid__9 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 0.9rem; }
+  .grid__3, .grid__6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 50%; }
   .grid__1 {
-    background-image: url(../recursos/servicios.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
+    background-image: url(../recursos/servicios.png); }
   .grid__2 {
-    background-image: url(../recursos/servicios2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
+    background-image: url(../recursos/servicios2.png); }
   .grid__3 {
-    background-image: url(../recursos/servicios3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 50%; }
+    background-image: url(../recursos/servicios3.png); }
   .grid__4 {
-    background-image: url(../recursos/servicios4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
+    background-image: url(../recursos/servicios4.png); }
   .grid__5 {
-    background-image: url(../recursos/servicios5.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
+    background-image: url(../recursos/servicios5.png); }
   .grid__6 {
-    background-image: url(../recursos/servicios6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 50%; }
+    background-image: url(../recursos/servicios6.png); }
+  .grid__7 {
+    background-image: url(../recursos/logo.png); }
+  .grid__8 {
+    background-image: url(../recursos/vetok.png); }
+  .grid__9 {
+    background-image: url(../recursos/vetok2.png); }
   .grid__txt {
     text-align: center;
     align-self: center;
@@ -464,41 +452,8 @@ footer {
     font-size: 24px;
     color: #fcd112;
     text-decoration: none; }
-  .grid__7 {
-    background-image: url(../recursos/logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
-  .grid__8 {
-    background-image: url(../recursos/vetok.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
-  .grid__9 {
-    background-image: url(../recursos/vetok2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 0.9rem; }
 
-@media all and (min-width: 320px) {
-  .grid {
-    grid-template-columns: repeat(1, 1fr); } }
-
-@media all and (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media all and (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr); } }
-
-.grid-gallery {
+grid-gallery {
   display: grid;
   padding: 3rem;
   grid-auto-rows: 200px;
@@ -506,58 +461,38 @@ footer {
   grid-auto-flow: row dense;
   background-image: linear-gradient(to bottom, black, white, black);
   align-self: center; }
-
-@media all and (min-width: 320px) {
-  .grid-gallery {
-    grid-template-columns: repeat(1, 1fr); } }
-
-@media all and (min-width: 768px) {
-  .grid-gallery {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media all and (min-width: 1024px) {
-  .grid-gallery {
-    grid-template-columns: repeat(6, 1fr); } }
-
-.grid-gallery__item:nth-child(11n+1) {
-  grid-column: span 1; }
-
-.grid-gallery__item:nth-child(11n+4) {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.grid-gallery__item:nth-child(11n+6) {
-  grid-column: span 3;
-  grid-row: span 1; }
-
-.grid-gallery__item:nth-child(11n+7) {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.grid-gallery__item:nth-child(11n+8) {
-  grid-column: span 2;
-  grid-row: span 2; }
-
-.grid-gallery__item:nth-child(11n+9) {
-  grid-row: span 3; }
-
-.grid-gallery__image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; }
-
-.grid-gallery__image:hover {
-  background: #2b2c2c;
-  border-radius: 10px;
-  color: #dddde6;
-  padding: 10px 20px;
-  border: 1px solid #ddd8d8;
-  transition-property: all;
-  /*a todas las propiedades nombradas*/
-  transition-duration: 0.5s;
-  /*con una duración de 0.5s*/
-  transition-timing-function: ease-in;
-  /*inicio lento, luego normal*/ }
+  grid-gallery__item:nth-child(11n+1) {
+    grid-column: span 1; }
+  grid-gallery__item:nth-child(11n+4) {
+    grid-column: span 2;
+    grid-row: span 1; }
+  grid-gallery-gallery__item:nth-child(11n+6) {
+    grid-column: span 3;
+    grid-row: span 1; }
+  grid-gallery-gallery__item:nth-child(11n+7) {
+    grid-column: span 1;
+    grid-row: span 2; }
+  grid-gallery-gallery__item:nth-child(11n+8) {
+    grid-column: span 2;
+    grid-row: span 2; }
+  grid-gallery-gallery__item:nth-child(11n+9) {
+    grid-row: span 3; }
+  grid-gallery-gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  grid-gallery-gallery__image:hover {
+    background: #2b2c2c;
+    border-radius: 10px;
+    color: #dddde6;
+    padding: 10px 20px;
+    border: 1px solid #ddd8d8;
+    transition-property: all;
+    /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s;
+    /*con una duración de 0.5s*/
+    transition-timing-function: ease-in;
+    /*inicio lento, luego normal*/ }
 
 @media screen and (max-width: 1024px) {
   .container-fluid,
@@ -584,6 +519,30 @@ footer {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem; } }
+
+@media all and (min-width: 320px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media all and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media all and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media all and (min-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    grid-template-columns: repeat(6, 1fr); } }
 
 /* ESTILOS GLOBALES */
 * {

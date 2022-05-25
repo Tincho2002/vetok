@@ -22,53 +22,53 @@
         transition-timing-function: ease-in;
         /*inicio lento, luego normal*/
     }
-    &__1 {
-        background-image: url(../recursos/servicios.png);
+    &__1,
+    &__2,
+    &__4,
+    &__5,
+    &__7,
+    &__8,
+    &__9 {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: 100%;
         border-radius: 0.9rem;
+    }
+    &__3,
+    &__6 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border-radius: 50%;
+    }
+    &__1 {
+        background-image: url(../recursos/servicios.png);
     }
     &__2 {
         background-image: url(../recursos/servicios2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
     }
     &__3 {
         background-image: url(../recursos/servicios3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 50%;
     }
     &__4 {
         background-image: url(../recursos/servicios4.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
     }
     &__5 {
         background-image: url(../recursos/servicios5.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
     }
     &__6 {
         background-image: url(../recursos/servicios6.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 50%;
+    }
+    &__7 {
+        background-image: url(../recursos/logo.png);
+    }
+    &__8 {
+        background-image: url(../recursos/vetok.png);
+    }
+    &__9 {
+        background-image: url(../recursos/vetok2.png);
     }
     &__txt {
         text-align: center;
@@ -92,51 +92,9 @@
         color: $background-yelow;
         text-decoration: none;
     }
-    &__7 {
-        background-image: url(../recursos/logo.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
-    }
-    &__8 {
-        background-image: url(../recursos/vetok.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
-    }
-    &__9 {
-        background-image: url(../recursos/vetok2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        border-radius: 0.9rem;
-    }
 }
 
-@media all and (min-width: 320px) {
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media all and (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media all and (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.grid-gallery {
+grid-gallery {
     display: grid;
     padding: 3rem;
     grid-auto-rows: 200px;
@@ -144,70 +102,44 @@
     grid-auto-flow: row dense;
     background-image: linear-gradient(to bottom, $color-black, $color-white, $color-black);
     align-self: center;
-}
-
-@media all and (min-width: 320px) {
-    .grid-gallery {
-        grid-template-columns: repeat(1, 1fr);
+    &__item:nth-child(11n+1) {
+        grid-column: span 1;
     }
-}
-
-@media all and (min-width: 768px) {
-    .grid-gallery {
-        grid-template-columns: repeat(3, 1fr);
+    &__item:nth-child(11n+4) {
+        grid-column: span 2;
+        grid-row: span 1;
     }
-}
-
-@media all and (min-width: 1024px) {
-    .grid-gallery {
-        grid-template-columns: repeat(6, 1fr);
+    &-gallery__item:nth-child(11n+6) {
+        grid-column: span 3;
+        grid-row: span 1;
     }
-}
-
-.grid-gallery__item:nth-child(11n+1) {
-    grid-column: span 1;
-}
-
-.grid-gallery__item:nth-child(11n+4) {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.grid-gallery__item:nth-child(11n+6) {
-    grid-column: span 3;
-    grid-row: span 1;
-}
-
-.grid-gallery__item:nth-child(11n+7) {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.grid-gallery__item:nth-child(11n+8) {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.grid-gallery__item:nth-child(11n+9) {
-    grid-row: span 3;
-}
-
-.grid-gallery__image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.grid-gallery__image:hover {
-    background: $hover-background;
-    border-radius: 10px;
-    color: $hover-color;
-    padding: 10px 20px;
-    border: 1px solid $hover-border;
-    transition-property: all;
-    /*a todas las propiedades nombradas*/
-    transition-duration: 0.5s;
-    /*con una duración de 0.5s*/
-    transition-timing-function: ease-in;
-    /*inicio lento, luego normal*/
+    &-gallery__item:nth-child(11n+7) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    &-gallery__item:nth-child(11n+8) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    &-gallery__item:nth-child(11n+9) {
+        grid-row: span 3;
+    }
+    &-gallery__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-gallery__image:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
 }
