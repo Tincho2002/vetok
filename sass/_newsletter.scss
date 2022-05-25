@@ -1,0 +1,53 @@
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    border-radius: 8px;
+    &__mes {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        padding: 15px;
+        box-shadow: -20px 20px 20px $color-newsletter;
+        background-color: $background-yelow;
+        border-radius: 8px;
+    }
+    &__link {
+        display: block;
+        flex-direction: column;
+        font-weight: bold;
+        align-self: center;
+        padding: 0 36px;
+        height: 70;
+        color: $color-black;
+        text-decoration: none;
+        color: $background-yelow;
+        justify-content: center;
+    }
+    &__title {
+        color: $background-yelow;
+        text-decoration: none;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.card {
+    margin: 1rem;
+    justify-content: center;
+    color: $color-black;
+    background-image: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
+    padding: 0.5rem;
+}

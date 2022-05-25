@@ -1,0 +1,25 @@
+{
+    "name": "vetok",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss sass/styles.scss css/estilos.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tincho2002/vetok.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tincho2002/vetok/issues"
+    },
+    "homepage": "https://github.com/Tincho2002/vetok#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.16"
+    }
+}

@@ -1,0 +1,22 @@
+.portada {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../recursos/circular2.png);
+    background-position: center;
+    height: 650px;
+    width: auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+    &__tex {
+        line-height: 10px;
+        font-size: medium;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-black;
+    }
+}

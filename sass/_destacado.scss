@@ -1,0 +1,52 @@
+.destacado {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-white;
+    &__Titulo {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: $color-black;
+        width: 100%;
+        box-shadow: -20px 20px 20px $color-shadow;
+    }
+    &__titulo {
+        color: $background-yelow;
+        text-decoration: none;
+    }
+    &__descripcion {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    &__1 {
+        display: inline-block;
+        width: 550px;
+        margin: 20px;
+        box-shadow: -20px 20px 20px $color-shadow;
+        justify-content: center;
+    }
+    &__2 {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        box-shadow: -20px 20px 20px $color-shadow;
+        border-radius: 1%;
+        margin: 20px;
+        justify-content: center;
+    }
+}
+
+.cards {
+    margin: 1rem;
+    justify-content: center;
+    color: $color-black;
+    background-image: linear-gradient(to left, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}

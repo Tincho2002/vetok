@@ -1,0 +1,71 @@
+.header {
+    background-color: $color-black;
+    &__usuario {
+        display: block;
+        background-color: $background-yelow;
+        border-radius: 5px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $background-yelow;
+}
+
+.nav-link:hover {
+    box-shadow: 0 3px 0 0 $background-yelow;
+    background: $background-nav-link;
+}
+
+.bg-black {
+    background-color: $color-black;
+}
+
+.navbar-toggler-icon {
+    background-color: $background-yelow;
+    border-radius: 0.5rem;
+}
+
+.navbar-brand {
+    border-radius: 2rem;
+}
+
+.dropdown-menu {
+    background-color: $color-black;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: $background-yelow;
+}
+
+.dropdown-item:hover {
+    box-shadow: 0 3px 0 0 $background-yelow;
+    background: $background-nav-link;
+}
+
+.navbar {
+    background-color: $color-black;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid $color-border-bottom;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.nav-item {
+    width: 150px;
+    align-items: center;
+}
+
+.navbar-nav {
+    align-items: center;
+}

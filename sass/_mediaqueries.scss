@@ -1,0 +1,33 @@
+@media screen and (max-width:1024px) {
+    .container-fluid,
+    footer {
+        background-color: $color-media;
+    }
+    .portada,
+    .destacado,
+    .servicios,
+    .promociones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container-fluid,
+    footer {
+        background-color: $color-media2;
+    }
+    .portada,
+    .destacado,
+    .servicios,
+    .promociones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}

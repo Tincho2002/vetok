@@ -1,0 +1,32 @@
+.promociones {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    width: 100%;
+    padding-bottom: 70px;
+    &__Titulo {
+        padding: 15px;
+        font-size: 20px;
+        background-color: $color-black;
+        width: 100%;
+        box-shadow: -20px 20px 20px $color-shadow;
+    }
+    &__titulo {
+        color: $color-promociones;
+        text-decoration: none;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+}

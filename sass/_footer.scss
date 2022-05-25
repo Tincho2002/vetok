@@ -1,0 +1,164 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-black;
+    width: 100%;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color: $color-white;
+    justify-content: center;
+    &:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
+    &__pack {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    &__cards {
+        text-align: center;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        text-decoration: none;
+        color: $background-yelow;
+        margin-bottom: 3px;
+        margin-top: 18px;
+    }
+    &__img {
+        background-color: $color-white;
+        border-radius: 100%;
+        margin: 10px;
+    }
+    &__tjs {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    &__redes {
+        margin: 12px;
+    }
+    &__tjs0 {
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    &__tjs1 {
+        margin: 10px;
+    }
+    &__imglogo1 {
+        border-radius: 5%;
+        margin-top: 33px;
+        margin-bottom: 33px;
+        margin-right: 5px;
+    }
+    &__img1 {
+        background-color: $color-white;
+        border-radius: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 5px;
+    }
+    &__links:hover,
+    &__img:hover,
+    &__redes:hover,
+    &__imglogo1:hover,
+    &__img1:hover,
+    &__tjs0:hover,
+    &__tjs:hover,
+    &__tjs1:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
+}
+
+.footer2 {
+    max-width: 1500px;
+    width: 100%;
+    color: $color-white;
+    border-bottom: 3px solid $color-border-bottom;
+    padding-bottom: 20px;
+    &:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
+    &__links {
+        text-align: center;
+        text-decoration: none;
+        color: $background-yelow;
+        margin-left: 20px;
+    }
+    &__links:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
+}
+
+.footer3 {
+    max-width: 1500px;
+    width: 100%;
+    color: $color-white;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    font-size: small;
+    &:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
+    &__links {
+        text-decoration: none;
+        color: $background-yelow;
+    }
+}
