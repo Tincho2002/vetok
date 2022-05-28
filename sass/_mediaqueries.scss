@@ -7,8 +7,7 @@
     .destacado,
     .servicios,
     .promociones {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 }
 
@@ -21,8 +20,7 @@
     .destacado,
     .servicios,
     .promociones {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 }
 

@@ -1,6 +1,5 @@
 .servicios {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     width: 100%;
     background-color: $color-promociones;
     justify-content: center;
@@ -17,8 +16,7 @@
         text-decoration: none;
     }
     &__descripcion {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-wrap;
         margin-top: 30px;
         margin-bottom: 10px;
         justify-content: center;
@@ -39,8 +37,7 @@
         padding: 15px;
     }
     &__cards {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex-wrap;
         padding: 1rem;
         justify-content: center;
     }

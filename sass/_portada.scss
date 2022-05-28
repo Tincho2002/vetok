@@ -1,6 +1,5 @@
 .portada {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-image: url(../recursos/circular2.png);
     background-position: center;
     height: 650px;
