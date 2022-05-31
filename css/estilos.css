@@ -312,6 +312,42 @@ footer {
     display: flex;
     justify-content: center; }
 
+.parallax,
+.texto {
+  margin: 0 auto; }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  max-width: 100%;
+  position: relative; }
+
+.texto-interior {
+  color: black;
+  font-size: xx-large;
+  font-weight: bold;
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 80%; }
+
+.texto {
+  padding: 5%;
+  width: 90%; }
+
+.img-uno {
+  background-image: url("https://www.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg"); }
+
+.img-dos {
+  background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/quality=80,width=1200,height=675,fit=cover/article/main-picture/5d7f86d69b35c743927922.jpg"); }
+
+.img-tres {
+  background-image: url("https://images.hola.com/imagenes/mascotas/20190412140510/razas-de-perro-para-convivir-con-gato/0-668-415/labrador-a.jpg"); }
+
 .newsletter {
   display: flex;
   flex-wrap: wrap;
