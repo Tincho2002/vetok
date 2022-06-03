@@ -240,6 +240,18 @@ footer {
   background-image: linear-gradient(to left, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
   padding: 1rem;
   border-radius: 0.5rem; }
+  .cards:hover {
+    background: #2b2c2c;
+    border-radius: 10px;
+    color: #dddde6;
+    padding: 10px 20px;
+    border: 1px solid #ddd8d8;
+    transition-property: all;
+    /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s;
+    /*con una duración de 0.5s*/
+    transition-timing-function: ease-in;
+    /*inicio lento, luego normal*/ }
 
 .servicios {
   display: flex;
@@ -272,7 +284,7 @@ footer {
   .servicios__contenido {
     width: 500px;
     height: auto;
-    text-align: justify;
+    text-align: left;
     line-height: 2rem;
     margin: 15px;
     padding: 15px; }
@@ -281,9 +293,21 @@ footer {
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center; }
-  .servicios__row {
-    display: flex;
-    justify-content: center; }
+    .servicios__cards:hover {
+      background: #2b2c2c;
+      border-radius: 10px;
+      color: #dddde6;
+      padding: 10px 20px;
+      border: 1px solid #ddd8d8;
+      transition-property: all;
+      /*a todas las propiedades nombradas*/
+      transition-duration: 0.5s;
+      /*con una duración de 0.5s*/
+      transition-timing-function: ease-in;
+      /*inicio lento, luego normal*/ }
+    .servicios__cards__row {
+      display: flex;
+      justify-content: center; }
 
 .promociones {
   display: flex;
@@ -308,50 +332,21 @@ footer {
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center; }
+    .promociones__cards:hover {
+      background: #2b2c2c;
+      border-radius: 10px;
+      color: #dddde6;
+      padding: 10px 20px;
+      border: 1px solid #ddd8d8;
+      transition-property: all;
+      /*a todas las propiedades nombradas*/
+      transition-duration: 0.5s;
+      /*con una duración de 0.5s*/
+      transition-timing-function: ease-in;
+      /*inicio lento, luego normal*/ }
   .promociones__row {
     display: flex;
     justify-content: center; }
-
-.parallax,
-.texto {
-  margin: 0 auto; }
-
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 30rem;
-  width: 100%;
-  position: relative; }
-
-.texto-interior {
-  color: #2b2c2c;
-  font-size: larger;
-  font-weight: bolder;
-  left: 10%;
-  position: right;
-  text-align: center;
-  top: 40%;
-  width: 40%; }
-
-.texto {
-  font-size: medium;
-  font-style: oblique;
-  padding: 5%;
-  width: 90%; }
-
-.img-uno {
-  background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/quality=80,width=1200,height=675,fit=cover/article/main-picture/5d7f86d69b35c743927922.jpg"); }
-
-.img-dos {
-  background-image: url("https://www.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg"); }
-
-.img-tres {
-  background-image: url("https://images.hola.com/imagenes/mascotas/20190412140510/razas-de-perro-para-convivir-con-gato/0-668-415/labrador-a.jpg"); }
-
-.img-cuatro {
-  background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg"); }
 
 .newsletter {
   display: flex;
@@ -399,6 +394,19 @@ footer {
   color: black;
   background-image: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
   padding: 0.5rem; }
+
+.planes__cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center; }
+
+.planes__row {
+  display: flex;
+  justify-content: center; }
+
+.planes__col-md-6 {
+  border-radius: 0.5rem; }
 
 .portada {
   display: flex;
@@ -543,6 +551,41 @@ footer {
   transition-timing-function: ease-in;
   /*inicio lento, luego normal*/ }
 
+.parallax,
+.texto {
+  margin: 0 auto; }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30rem;
+  width: 100%;
+  position: relative; }
+  .parallax__img-uno {
+    background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/quality=80,width=1200,height=675,fit=cover/article/main-picture/5d7f86d69b35c743927922.jpg"); }
+  .parallax__img-dos {
+    background-image: url("https://www.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg"); }
+  .parallax__img-tres {
+    background-image: url("https://images.hola.com/imagenes/mascotas/20190412140510/razas-de-perro-para-convivir-con-gato/0-668-415/labrador-a.jpg"); }
+  .parallax__img-cuatro {
+    background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg"); }
+  .parallax__texto-interior {
+    color: #2b2c2c;
+    font-size: larger;
+    font-weight: bolder;
+    left: 10%;
+    position: right;
+    text-align: center;
+    top: 40%;
+    width: 40%; }
+  .parallax__texto {
+    font-size: medium;
+    font-style: oblique;
+    padding: 5%;
+    width: 90%; }
+
 @media screen and (max-width: 1024px) {
   .container-fluid,
   footer {
@@ -672,3 +715,15 @@ li {
   background-image: linear-gradient(to top, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
   padding: 1rem;
   border-radius: 0.5rem; }
+  .card__s:hover {
+    background: #2b2c2c;
+    border-radius: 10px;
+    color: #dddde6;
+    padding: 10px 20px;
+    border: 1px solid #ddd8d8;
+    transition-property: all;
+    /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s;
+    /*con una duración de 0.5s*/
+    transition-timing-function: ease-in;
+    /*inicio lento, luego normal*/ }

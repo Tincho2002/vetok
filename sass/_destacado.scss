@@ -45,4 +45,17 @@
     background-image: linear-gradient(to left, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
     padding: 1rem;
     border-radius: 0.5rem;
+    &:hover {
+        background: $hover-background;
+        border-radius: 10px;
+        color: $hover-color;
+        padding: 10px 20px;
+        border: 1px solid $hover-border;
+        transition-property: all;
+        /*a todas las propiedades nombradas*/
+        transition-duration: 0.5s;
+        /*con una duración de 0.5s*/
+        transition-timing-function: ease-in;
+        /*inicio lento, luego normal*/
+    }
 }

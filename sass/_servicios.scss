@@ -1,48 +1,61 @@
-.servicios {
-    @include flex-column;
-    width: 100%;
-    background-color: $color-promociones;
-    justify-content: center;
-    padding: 0.5rem;
-    &__Titulo {
-        padding: 15px;
-        font-size: 20px;
-        font-weight: bold;
+    .servicios {
+        @include flex-column;
         width: 100%;
-        box-shadow: -20px 20px 20px $color-shadow;
-    }
-    &__titulo {
-        color: $color-black;
-        text-decoration: none;
-    }
-    &__descripcion {
-        @include flex-wrap;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        background-color: $color-promociones;
         justify-content: center;
+        padding: 0.5rem;
+        &__Titulo {
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            box-shadow: -20px 20px 20px $color-shadow;
+        }
+        &__titulo {
+            color: $color-black;
+            text-decoration: none;
+        }
+        &__descripcion {
+            @include flex-wrap;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+        &__1 {
+            height: auto;
+            width: 500px;
+            margin: 20px;
+            box-shadow: -20px 20px 20px $color-shadow;
+            border-radius: 8px;
+        }
+        &__contenido {
+            width: 500px;
+            height: auto;
+            text-align: left;
+            line-height: 2rem;
+            margin: 15px;
+            padding: 15px;
+        }
+        &__cards {
+            @include flex-wrap;
+            padding: 1rem;
+            justify-content: center;
+            &:hover {
+                background: $hover-background;
+                border-radius: 10px;
+                color: $hover-color;
+                padding: 10px 20px;
+                border: 1px solid $hover-border;
+                transition-property: all;
+                /*a todas las propiedades nombradas*/
+                transition-duration: 0.5s;
+                /*con una duración de 0.5s*/
+                transition-timing-function: ease-in;
+                /*inicio lento, luego normal*/
+            }
+            &__row {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
-    &__1 {
-        height: auto;
-        width: 500px;
-        margin: 20px;
-        box-shadow: -20px 20px 20px $color-shadow;
-        border-radius: 8px;
-    }
-    &__contenido {
-        width: 500px;
-        height: auto;
-        text-align: justify;
-        line-height: 2rem;
-        margin: 15px;
-        padding: 15px;
-    }
-    &__cards {
-        @include flex-wrap;
-        padding: 1rem;
-        justify-content: center;
-    }
-    &__row {
-        display: flex;
-        justify-content: center;
-    }
-}

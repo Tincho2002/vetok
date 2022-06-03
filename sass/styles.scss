@@ -1,103 +1,112 @@
-@import 'variables';
-@import 'sasscript';
-@import 'header';
-@import 'footer';
-@import 'destacado';
-@import 'servicios';
-@import 'promociones';
-@import 'newsletter';
-@import 'portada';
-@import 'grids';
-@import 'mediaqueries';
-
-/* ESTILOS GLOBALES */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    font-family: $font-family, $font-family2;
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    background-image: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
-}
-
-
-/* HEADER */
-
-li {
-    display: inline-block;
-    position: relative;
-    font-size: 16px;
-}
-
-
-/* MAIN */
-
-.article__contenido {
-    /*background-color: $color-black;*/
-    background-image: linear-gradient(to top, $background-body, $color-black, $color-media, $color-black, $background-body);
-    background-position-y: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    padding: 2rem;
-    color: $background-yelow;
-    border-radius: 0.5rem;
-}
-
-.section__mari {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../recursos/marzo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
-    background-position-x: left;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 1rem;
-    color: $color-black;
-    border-radius: 0.5rem;
-}
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.py-5 {
-    margin-top: 2rem;
-}
-
-.card__s {
-    margin: .5rem;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    color: $color-black;
-    background-image: linear-gradient(to top, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
+    @import 'variables';
+    @import 'sasscript';
+    @import 'header';
+    @import 'footer';
+    @import 'destacado';
+    @import 'servicios';
+    @import 'promociones';
+    @import 'newsletter';
+    @import 'portada';
+    @import 'grids';
+    @import 'parallax';
+    @import 'mediaqueries';
+    /* ESTILOS GLOBALES */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    body {
+        font-family: $font-family, $font-family2;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-image: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
+    }
+    /* HEADER */
+    
+    li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+    }
+    /* MAIN */
+    
+    .article__contenido {
+        /*background-color: $color-black;*/
+        background-image: linear-gradient(to top, $background-body, $color-black, $color-media, $color-black, $background-body);
+        background-position-y: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        color: $background-yelow;
+        border-radius: 0.5rem;
+    }
+    
+    .section__mari {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../recursos/marzo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
+        background-position-x: left;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 1rem;
+        color: $color-black;
+        border-radius: 0.5rem;
+    }
+    
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .py-5 {
+        margin-top: 2rem;
+    }
+    
+    .card__s {
+        margin: .5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        color: $color-black;
+        background-image: linear-gradient(to top, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        &:hover {
+            background: $hover-background;
+            border-radius: 10px;
+            color: $hover-color;
+            padding: 10px 20px;
+            border: 1px solid $hover-border;
+            transition-property: all;
+            /*a todas las propiedades nombradas*/
+            transition-duration: 0.5s;
+            /*con una duración de 0.5s*/
+            transition-timing-function: ease-in;
+            /*inicio lento, luego normal*/
+        }
+    }
