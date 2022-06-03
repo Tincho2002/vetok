@@ -405,8 +405,10 @@ footer {
   display: flex;
   justify-content: center; }
 
-.planes__col-md-6 {
-  border-radius: 0.5rem; }
+.planes__col-md-3 {
+  border-radius: 0.5rem;
+  width: 50%;
+  margin-top: 3rem; }
 
 .portada {
   display: flex;

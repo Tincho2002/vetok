@@ -60,7 +60,9 @@
         display: flex;
         justify-content: center;
     }
-    &__col-md-6 {
+    &__col-md-3 {
         border-radius: 0.5rem;
+        width: 50%;
+        margin-top: 3rem;
     }
 }
