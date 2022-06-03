@@ -1,11 +1,12 @@
 @media screen and (max-width:1024px) {
     .container-fluid,
     footer {
-        background-color: $color-media;
+        background-image: linear-gradient(to left, $background-body, $color-black, $color-media, $color-black, $background-body);
     }
     .portada,
     .destacado,
     .servicios,
+    .parallax,
     .promociones {
         @include flex-column;
     }
@@ -14,11 +15,12 @@
 @media screen and (max-width:768px) {
     .container-fluid,
     footer {
-        background-color: $color-media2;
+        background-image: linear-gradient(to top, $background-body, $color-black, $color-media, $color-black, $background-body);
     }
     .portada,
     .destacado,
     .servicios,
+    .parallax,
     .promociones {
         @include flex-column;
     }

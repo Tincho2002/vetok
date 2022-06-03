@@ -320,33 +320,38 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 30rem;
-  max-width: 100%;
+  width: 100%;
   position: relative; }
 
 .texto-interior {
-  color: black;
-  font-size: xx-large;
-  font-weight: bold;
+  color: #2b2c2c;
+  font-size: larger;
+  font-weight: bolder;
   left: 10%;
-  position: absolute;
+  position: right;
   text-align: center;
   top: 40%;
-  width: 80%; }
+  width: 40%; }
 
 .texto {
+  font-size: medium;
+  font-style: oblique;
   padding: 5%;
   width: 90%; }
 
 .img-uno {
-  background-image: url("https://www.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg"); }
+  background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/quality=80,width=1200,height=675,fit=cover/article/main-picture/5d7f86d69b35c743927922.jpg"); }
 
 .img-dos {
-  background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/quality=80,width=1200,height=675,fit=cover/article/main-picture/5d7f86d69b35c743927922.jpg"); }
+  background-image: url("https://www.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg"); }
 
 .img-tres {
   background-image: url("https://images.hola.com/imagenes/mascotas/20190412140510/razas-de-perro-para-convivir-con-gato/0-668-415/labrador-a.jpg"); }
+
+.img-cuatro {
+  background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg"); }
 
 .newsletter {
   display: flex;
@@ -541,10 +546,11 @@ footer {
 @media screen and (max-width: 1024px) {
   .container-fluid,
   footer {
-    background-color: #5a0fd3; }
+    background-image: linear-gradient(to left, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,
   .destacado,
   .servicios,
+  .parallax,
   .promociones {
     display: flex;
     flex-direction: column; } }
@@ -552,10 +558,11 @@ footer {
 @media screen and (max-width: 768px) {
   .container-fluid,
   footer {
-    background-color: #240224; }
+    background-image: linear-gradient(to top, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,
   .destacado,
   .servicios,
+  .parallax,
   .promociones {
     display: flex;
     flex-direction: column; } }
@@ -616,22 +623,24 @@ li {
 
 /* MAIN */
 .article__contenido {
-  background-color: black;
+  /*background-color: $color-black;*/
+  background-image: linear-gradient(to top, #918f8f, black, #5a0fd3, black, #918f8f);
   background-position-y: center;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   padding: 2rem;
   color: #fcd112;
   border-radius: 0.5rem; }
 
 .section__mari {
   display: flex;
+  flex-direction: column;
   background-image: url(../recursos/marzo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fcd112;
+  background-color: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
   background-position-x: left;
   justify-content: center;
   align-items: center;
