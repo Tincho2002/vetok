@@ -573,6 +573,10 @@ footer {
     background-image: url("https://images.hola.com/imagenes/mascotas/20190412140510/razas-de-perro-para-convivir-con-gato/0-668-415/labrador-a.jpg"); }
   .parallax__img-cuatro {
     background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg"); }
+  .parallax__img-cinco {
+    background-image: url("../recursos/Chapa (3).jpg"); }
+  .parallax__img-seis {
+    background-image: url("../recursos/Chapa (2).jpg"); }
   .parallax__texto-interior {
     color: #2b2c2c;
     font-size: larger;
@@ -585,11 +589,17 @@ footer {
   .parallax__texto {
     font-size: medium;
     font-style: oblique;
+    text-align: center;
     padding: 5%;
-    width: 90%; }
+    width: 100%; }
+
+.error404 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
 
 @media screen and (max-width: 1024px) {
   .container-fluid,
+  .navbar,
   footer {
     background-image: linear-gradient(to left, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,
@@ -602,6 +612,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .container-fluid,
+  .navbar,
   footer {
     background-image: linear-gradient(to top, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,

@@ -23,6 +23,12 @@
     &__img-cuatro {
         background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg");
     }
+    &__img-cinco {
+        background-image: url("../recursos/Chapa (3).jpg");
+    }
+    &__img-seis {
+        background-image: url("../recursos/Chapa (2).jpg");
+    }
     &__texto-interior {
         color: $hover-background;
         font-size: larger;
@@ -36,7 +42,13 @@
     &__texto {
         font-size: medium;
         font-style: oblique;
+        text-align: center;
         padding: 5%;
-        width: 90%
+        width: 100%;
     }
+}
+
+.error404 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
