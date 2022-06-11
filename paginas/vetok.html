@@ -17,10 +17,11 @@
 
 <body>
     <header>
+        <!--Menú de Navegación-->
         <nav class="navbar navbar-expand-lg navbar-black bg-black">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../recursos/logov-menu.png" alt="" width="95" height="55">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-img" src="../recursos/logov-menu.png" alt="foto logo menu">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,6 +37,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
                         </li>
+                        <!--SubMenú Promociones-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Promociones
@@ -51,6 +53,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../paginas/planes.html">Planes</a>
                         </li>
+                        <!--SubMenú Newsletter-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Newsletter
@@ -60,6 +63,7 @@
                                 <li><a class="dropdown-item" href="../paginas/enero.html">Enero 2022</a></li>
                                 <li><a class="dropdown-item" href="../paginas/febrero.html">Febrero 2022</a></li>
                                 <li><a class="dropdown-item" href="../paginas/marzo.html">Marzo 2022</a></li>
+                                <li><a class="dropdown-item" href="../paginas/abril.html">Abril 2022</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -68,56 +72,58 @@
                     </ul>
                 </div>
                 <a class="header__usuario" href="paginas/ingresar.html">
-                    <img src="../recursos/usuario1.png" alt="" width="50" height="50">
+                    <img src="../recursos/usuario1.png" alt="foto usuario ingresar">
                 </a>
             </div>
         </nav>
+        <!--Fin del Menú de Navegación-->
     </header>
     <main>
+        <!--Título VET-OK!-->
         <article class="article__contenido">
             <a class="grid__titulo" href="../index.html">
                 <h1>VET-OK!</h1>
             </a>
         </article>
+        <!--Grid Descripción de VET-OK!-->
         <section class="grid">
             <div class="grid__8"></div>
             <p class="grid__txt">Creemos en la vida, en la salud y en los cuidados. En <strong>VET-OK!</strong>entendemos que nuestras mascotas son parte de nuestra familia y queremos lo mejor para ellos. Por eso te ofrecemos un centro de alta complejidad para acompañarte
                 siempre en cada momento de tu vida. Amamos lo que hacemos y desde el 1997 atendemos de forma ininterrumpida, estando al servicio de nuestra comunidad con la calidez humana y responsabilidad que nos distingue.</p>
             <div class="grid__9"></div>
         </section>
+        <!--Cards Bootstrap CEO VET-OK!-->
         <div class="container">
-            <div class="newsletter__row">
-                <div class="newsletter__cards">
-                    <div class="cards" style="width: 19rem;">
-                        <img src="../recursos/walter.jpg" class="card-img-top" alt="foto walter">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Dr. Walter González</strong></p>
-                            <p class="card-text">BJ-17589</p>
-                            <p class="card-text">SOCIO GERENTE</p>
-                        </div>
+            <div class="destacado__row">
+                <div class="destacado__cards">
+                    <img src="../recursos/walter.jpg" class="card-img-top" alt="foto walter">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Dr. Walter González</strong></p>
+                        <p class="card-text">BJ-17589</p>
+                        <p class="card-text">SOCIO GERENTE</p>
                     </div>
-                    <div class="cards" style="width: 19rem;">
-                        <img src="../recursos/guille.png" class="card-img-top" alt="foto guille">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Dr. Guillermo Rivelis</strong></p>
-                            <p class="card-text">AW-25129</p>
-                            <p class="card-text">DIRECTOR</p>
-                        </div>
+                </div>
+                <div class="destacado__cards">
+                    <img src="../recursos/guille.png" class="card-img-top" alt="foto guille">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Dr. Guillermo Rivelis</strong></p>
+                        <p class="card-text">AW-25129</p>
+                        <p class="card-text">DIRECTOR</p>
                     </div>
-                    <div class="cards" style="width: 19rem;">
-                        <img src="../recursos/victoria.jpg" class="card-img-top" alt="foto viki">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Dra. Victoria Ríos</strong></p>
-                            <p class="card-text">BX-17589</p>
-                            <p class="card-text">SOCIA GERENTE</p>
-                        </div>
+                </div>
+                <div class="destacado__cards">
+                    <img src="../recursos/victoria.jpg" class="card-img-top" alt="foto viki">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Dra. Victoria Ríos</strong></p>
+                        <p class="card-text">BX-17589</p>
+                        <p class="card-text">SOCIA GERENTE</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
     <footer>
+        <!--Footer 1era seccion: redes sociales/planes/newsletter/medios de pago-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -138,9 +144,9 @@
                         <div class="footer1__pack">
                             <p>PLANES</p>
                             <div>
-                                <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
-                                <a class="footer1__links" href=" " alt="jovenes-ok! ">Jóvenes-OK!</a>
-                                <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+                                <a class="footer1__links" href="../paginas/planes.html" alt="cachorros-ok! ">Cachorros-OK!</a>
+                                <a class="footer1__links" href=" ../paginas/planes.html" alt="jovenes-ok! ">Jóvenes-OK!</a>
+                                <a class="footer1__links" href="../paginas/planes.html" alt="adultos-ok! ">Adultos-OK!</a>
                             </div>
                         </div>
                         <div class="footer1__pack">
@@ -167,6 +173,7 @@
                 </div>
             </div>
         </div>
+        <!--Footer 2da seccion menú de navegación-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -188,6 +195,7 @@
                 </div>
             </div>
         </div>
+        <!--Footer 3era seccion Derechos Reservados-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">

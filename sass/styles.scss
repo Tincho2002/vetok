@@ -8,6 +8,7 @@
     @import 'newsletter';
     @import 'portada';
     @import 'grids';
+    @import 'planes';
     @import 'parallax';
     @import 'mediaqueries';
     /* ESTILOS GLOBALES */
@@ -43,7 +44,6 @@
     /* MAIN */
     
     .article__contenido {
-        /*background-color: $color-black;*/
         background-image: linear-gradient(to top, $background-body, $color-black, $color-media, $color-black, $background-body);
         background-position-y: center;
         justify-content: center;
@@ -87,26 +87,11 @@
         margin-top: 2rem;
     }
     
-    .card__s {
-        margin: .5rem;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        color: $color-black;
-        background-image: linear-gradient(to top, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
-        padding: 1rem;
+    .form__gatoamarillo {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    .form__img {
         border-radius: 0.5rem;
-        &:hover {
-            background: $hover-background;
-            border-radius: 10px;
-            color: $hover-color;
-            padding: 10px 20px;
-            border: 1px solid $hover-border;
-            transition-property: all;
-            /*a todas las propiedades nombradas*/
-            transition-duration: 0.5s;
-            /*con una duración de 0.5s*/
-            transition-timing-function: ease-in;
-            /*inicio lento, luego normal*/
-        }
     }

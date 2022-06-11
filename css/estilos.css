@@ -4,9 +4,9 @@
   .header__usuario {
     display: block;
     background-color: #fcd112;
-    border-radius: 5px;
-    height: 50px;
-    width: 50px; }
+    border-radius: 0.3rem;
+    height: 3rem;
+    width: 3rem; }
 
 .nav-link {
   text-decoration: none;
@@ -16,15 +16,17 @@
   box-shadow: 0 3px 0 0 #fcd112;
   background: #e2f154; }
 
-.bg-black {
-  background-color: black; }
-
 .navbar-toggler-icon {
   background-color: #fcd112;
   border-radius: 0.5rem; }
 
 .navbar-brand {
   border-radius: 2rem; }
+
+.navbar-img {
+  height: 3.5rem;
+  width: 6rem;
+  border-radius: 0.5rem; }
 
 .dropdown-menu {
   background-color: black; }
@@ -42,17 +44,16 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-  padding: 0 1.5rem;
+  padding: 0 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  max-width: 1500px;
   width: 100%;
   margin: 0px auto; }
 
 .nav-item {
-  width: 150px;
+  width: 10rem;
   align-items: center; }
 
 .navbar-nav {
@@ -73,7 +74,7 @@ footer {
   .footer1:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #ece7e7;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -126,7 +127,7 @@ footer {
   .footer1__links:hover, .footer1__img:hover, .footer1__redes:hover, .footer1__imglogo1:hover, .footer1__img1:hover, .footer1__tjs0:hover, .footer1__tjs:hover, .footer1__tjs1:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #0f0f0f;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -145,7 +146,7 @@ footer {
   .footer2:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #0f0f0f;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -162,7 +163,7 @@ footer {
   .footer2__links:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #0f0f0f;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -182,7 +183,7 @@ footer {
   .footer3:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #0f0f0f;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -232,26 +233,50 @@ footer {
     border-radius: 1%;
     margin: 20px;
     justify-content: center; }
-
-.cards {
-  margin: 1rem;
-  justify-content: center;
-  color: black;
-  background-image: linear-gradient(to left, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
-  padding: 1rem;
-  border-radius: 0.5rem; }
-  .cards:hover {
-    background: #2b2c2c;
-    border-radius: 10px;
-    color: #dddde6;
-    padding: 10px 20px;
-    border: 1px solid #ddd8d8;
-    transition-property: all;
-    /*a todas las propiedades nombradas*/
-    transition-duration: 0.5s;
-    /*con una duración de 0.5s*/
-    transition-timing-function: ease-in;
-    /*inicio lento, luego normal*/ }
+  .destacado__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .destacado__cards {
+    margin: 1rem;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to left, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 20rem; }
+    .destacado__cards:hover {
+      background: #cecc7c;
+      border-radius: 10px;
+      color: #0f0f0f;
+      padding: 10px 20px;
+      border: 1px solid #ddd8d8;
+      transition-property: all;
+      /*a todas las propiedades nombradas*/
+      transition-duration: 0.5s;
+      /*con una duración de 0.5s*/
+      transition-timing-function: ease-in;
+      /*inicio lento, luego normal*/ }
+  .destacado__video {
+    margin: 1rem;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to left, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 25rem; }
+    .destacado__video:hover {
+      background: #cecc7c;
+      border-radius: 10px;
+      color: #0f0f0f;
+      padding: 10px 20px;
+      border: 1px solid #ddd8d8;
+      transition-property: all;
+      /*a todas las propiedades nombradas*/
+      transition-duration: 0.5s;
+      /*con una duración de 0.5s*/
+      transition-timing-function: ease-in;
+      /*inicio lento, luego normal*/ }
 
 .servicios {
   display: flex;
@@ -296,7 +321,7 @@ footer {
     .servicios__cards:hover {
       background: #2b2c2c;
       border-radius: 10px;
-      color: #dddde6;
+      color: #0f0f0f;
       padding: 10px 20px;
       border: 1px solid #ddd8d8;
       transition-property: all;
@@ -308,13 +333,53 @@ footer {
     .servicios__cards__row {
       display: flex;
       justify-content: center; }
+  .servicios__card__s {
+    margin: .5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    color: black;
+    background-image: linear-gradient(to top, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 6rem; }
+    .servicios__card__s:hover {
+      background: #2b2c2c;
+      border-radius: 10px;
+      color: #0f0f0f;
+      padding: 10px 20px;
+      border: 1px solid #ddd8d8;
+      transition-property: all;
+      /*a todas las propiedades nombradas*/
+      transition-duration: 0.5s;
+      /*con una duración de 0.5s*/
+      transition-timing-function: ease-in;
+      /*inicio lento, luego normal*/ }
 
 .promociones {
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 100%;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  /*&__cards {
+        @include flex-wrap;
+        padding: 1rem;
+        justify-content: center;
+        &:hover {
+            background: $hover-background;
+            border-radius: 10px;
+            color: $hover-color;
+            padding: 10px 20px;
+            border: 1px solid $hover-border;
+            transition-property: all;
+            a todas las propiedades nombradas
+            transition-duration: 0.5s;
+            con una duración de 0.5s
+            transition-timing-function: ease-in;
+            inicio lento, luego normal
+        }
+    }*/ }
   .promociones__Titulo {
     padding: 15px;
     font-size: 20px;
@@ -327,15 +392,22 @@ footer {
   .promociones__img {
     width: 100%;
     height: auto; }
-  .promociones__cards {
+  .promociones__row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
     justify-content: center; }
+  .promociones__cards {
+    margin: 1rem;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to left, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 25rem; }
     .promociones__cards:hover {
-      background: #2b2c2c;
+      background: #cecc7c;
       border-radius: 10px;
-      color: #dddde6;
+      color: #0f0f0f;
       padding: 10px 20px;
       border: 1px solid #ddd8d8;
       transition-property: all;
@@ -344,9 +416,6 @@ footer {
       /*con una duración de 0.5s*/
       transition-timing-function: ease-in;
       /*inicio lento, luego normal*/ }
-  .promociones__row {
-    display: flex;
-    justify-content: center; }
 
 .newsletter {
   display: flex;
@@ -387,6 +456,13 @@ footer {
   .newsletter__row {
     display: flex;
     justify-content: center; }
+  .newsletter__card {
+    margin: 1rem;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
+    padding: 0.5rem;
+    width: 25rem; }
 
 .card {
   margin: 1rem;
@@ -395,20 +471,31 @@ footer {
   background-image: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
   padding: 0.5rem; }
 
-.planes__cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  justify-content: center; }
+/*carrusel abril.html*/
+.carousel-caption {
+  color: black;
+  font-weight: bold;
+  font-size: small;
+  padding-left: 4rem;
+  padding-right: 4rem; }
 
-.planes__row {
-  display: flex;
-  justify-content: center; }
+.carousel-caption:hover {
+  background: #e0ca67;
+  border-radius: 10px;
+  color: #0f0f0f;
+  padding: 10px 20px;
+  border: 1px solid #ddd8d8;
+  transition-property: all;
+  /*a todas las propiedades nombradas*/
+  transition-duration: 0.5s;
+  /*con una duración de 0.5s*/
+  transition-timing-function: ease-in;
+  /*inicio lento,luego normal*/ }
 
-.planes__col-md-3 {
-  border-radius: 0.5rem;
-  width: 50%;
-  margin-top: 3rem; }
+.d-block {
+  width: 60%;
+  height: auto;
+  margin: auto; }
 
 .portada {
   display: flex;
@@ -445,7 +532,7 @@ footer {
   .grid:hover {
     background: #2b2c2c;
     border-radius: 10px;
-    color: #dddde6;
+    color: #0f0f0f;
     padding: 10px 20px;
     border: 1px solid #ddd8d8;
     transition-property: all;
@@ -543,7 +630,7 @@ footer {
 .grid-gallery__image:hover {
   background: #2b2c2c;
   border-radius: 10px;
-  color: #dddde6;
+  color: #0f0f0f;
   padding: 10px 20px;
   border: 1px solid #ddd8d8;
   transition-property: all;
@@ -552,6 +639,29 @@ footer {
   /*con una duración de 0.5s*/
   transition-timing-function: ease-in;
   /*inicio lento, luego normal*/ }
+
+.planes__cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center; }
+
+.planes__row {
+  display: flex;
+  justify-content: center; }
+
+.planes__col-md-3 {
+  border-radius: 0.5rem;
+  width: 50%;
+  margin-top: 3rem; }
+
+.planes__card {
+  margin: 1rem;
+  justify-content: center;
+  color: black;
+  background-image: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
+  padding: 0.5rem;
+  width: 20rem; }
 
 .parallax,
 .texto {
@@ -603,6 +713,7 @@ footer {
   footer {
     background-image: linear-gradient(to left, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,
+  .carousel,
   .destacado,
   .servicios,
   .parallax,
@@ -616,6 +727,7 @@ footer {
   footer {
     background-image: linear-gradient(to top, #918f8f, black, #5a0fd3, black, #918f8f); }
   .portada,
+  .carousel,
   .destacado,
   .servicios,
   .parallax,
@@ -679,7 +791,6 @@ li {
 
 /* MAIN */
 .article__contenido {
-  /*background-color: $color-black;*/
   background-image: linear-gradient(to top, #918f8f, black, #5a0fd3, black, #918f8f);
   background-position-y: center;
   justify-content: center;
@@ -719,24 +830,9 @@ li {
 .py-5 {
   margin-top: 2rem; }
 
-.card__s {
-  margin: .5rem;
-  justify-content: center;
-  align-items: center;
-  font-size: small;
-  color: black;
-  background-image: linear-gradient(to top, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
-  padding: 1rem;
+.form__gatoamarillo {
+  width: 9rem;
+  height: 9rem; }
+
+.form__img {
   border-radius: 0.5rem; }
-  .card__s:hover {
-    background: #2b2c2c;
-    border-radius: 10px;
-    color: #dddde6;
-    padding: 10px 20px;
-    border: 1px solid #ddd8d8;
-    transition-property: all;
-    /*a todas las propiedades nombradas*/
-    transition-duration: 0.5s;
-    /*con una duración de 0.5s*/
-    transition-timing-function: ease-in;
-    /*inicio lento, luego normal*/ }

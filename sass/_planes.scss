@@ -1,0 +1,24 @@
+.planes {
+    &__cards {
+        @include flex-wrap;
+        padding: 1rem;
+        justify-content: center;
+    }
+    &__row {
+        display: flex;
+        justify-content: center;
+    }
+    &__col-md-3 {
+        border-radius: 0.5rem;
+        width: 50%;
+        margin-top: 3rem;
+    }
+    &__card {
+        margin: 1rem;
+        justify-content: center;
+        color: $color-black;
+        background-image: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
+        padding: 0.5rem;
+        width: 20rem;
+    }
+}

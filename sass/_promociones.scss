@@ -18,12 +18,38 @@
         width: 100%;
         height: auto;
     }
-    &__cards {
+    /*&__cards {
         @include flex-wrap;
         padding: 1rem;
         justify-content: center;
         &:hover {
             background: $hover-background;
+            border-radius: 10px;
+            color: $hover-color;
+            padding: 10px 20px;
+            border: 1px solid $hover-border;
+            transition-property: all;
+            a todas las propiedades nombradas
+            transition-duration: 0.5s;
+            con una duración de 0.5s
+            transition-timing-function: ease-in;
+            inicio lento, luego normal
+        }
+    }*/
+    &__row {
+        @include flex-wrap;
+        justify-content: center;
+    }
+    &__cards {
+        margin: 1rem;
+        justify-content: center;
+        color: $color-black;
+        background-image: linear-gradient(to left, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 25rem;
+        &:hover {
+            background: $hover-card;
             border-radius: 10px;
             color: $hover-color;
             padding: 10px 20px;
@@ -35,9 +61,5 @@
             transition-timing-function: ease-in;
             /*inicio lento, luego normal*/
         }
-    }
-    &__row {
-        display: flex;
-        justify-content: center;
     }
 }

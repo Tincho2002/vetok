@@ -3,9 +3,9 @@
     &__usuario {
         display: block;
         background-color: $background-yelow;
-        border-radius: 5px;
-        height: 50px;
-        width: 50px;
+        border-radius: 0.3rem;
+        height: 3rem;
+        width: 3rem;
     }
 }
 
@@ -19,10 +19,6 @@
     background: $background-nav-link;
 }
 
-.bg-black {
-    background-color: $color-black;
-}
-
 .navbar-toggler-icon {
     background-color: $background-yelow;
     border-radius: 0.5rem;
@@ -30,6 +26,12 @@
 
 .navbar-brand {
     border-radius: 2rem;
+}
+
+.navbar-img {
+    height: 3.5rem;
+    width: 6rem;
+    border-radius: 0.5rem;
 }
 
 .dropdown-menu {
@@ -51,18 +53,17 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid $color-border-bottom;
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    max-width: 1500px;
     width: 100%;
     margin: 0px auto;
 }
 
 .nav-item {
-    width: 150px;
+    width: 10rem;
     align-items: center;
 }
 

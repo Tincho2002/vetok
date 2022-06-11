@@ -40,6 +40,14 @@
         display: flex;
         justify-content: center;
     }
+    &__card {
+        margin: 1rem;
+        justify-content: center;
+        color: $color-black;
+        background-image: linear-gradient(to left, $background-body, $background-body2, $color-white, $background-body2, $background-body);
+        padding: 0.5rem;
+        width: 25rem;
+    }
 }
 
 .card {
@@ -50,19 +58,33 @@
     padding: 0.5rem;
 }
 
-.planes {
-    &__cards {
-        @include flex-wrap;
-        padding: 1rem;
-        justify-content: center;
-    }
-    &__row {
-        display: flex;
-        justify-content: center;
-    }
-    &__col-md-3 {
-        border-radius: 0.5rem;
-        width: 50%;
-        margin-top: 3rem;
-    }
+
+/*carrusel abril.html*/
+
+.carousel-caption {
+    color: $font-carrusel-color;
+    font-weight: bold;
+    font-size: small;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.carousel-caption:hover {
+    background: $background-carrusel;
+    border-radius: 10px;
+    color: $hover-color;
+    padding: 10px 20px;
+    border: 1px solid $hover-border;
+    transition-property: all;
+    /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s;
+    /*con una duración de 0.5s*/
+    transition-timing-function: ease-in;
+    /*inicio lento,luego normal*/
+}
+
+.d-block {
+    width: 60%;
+    height: auto;
+    margin: auto;
 }

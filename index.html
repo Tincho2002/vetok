@@ -17,10 +17,11 @@
 
 <body>
     <header>
+        <!--Menú de Navegación-->
         <nav class="navbar navbar-expand-lg navbar-black bg-black">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="recursos/logov-menu.png" alt="" width="95" height="55">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-img" src="recursos/logov-menu.png" alt="foto logo menu">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,6 +37,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/servicios.html">Servicios</a>
                         </li>
+                        <!--SubMenú Promociones-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="paginas/promociones.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Promociones
@@ -51,6 +53,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/planes.html">Planes</a>
                         </li>
+                        <!--SubMenú Newsletter-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="paginas/newsletter.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Newsletter
@@ -60,23 +63,25 @@
                                 <li><a class="dropdown-item" href="paginas/enero.html">Enero 2022</a></li>
                                 <li><a class="dropdown-item" href="paginas/febrero.html">Febrero 2022</a></li>
                                 <li><a class="dropdown-item" href="paginas/marzo.html">Marzo 2022</a></li>
+                                <li><a class="dropdown-item" href="paginas/abril.html">Abril 2022</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/contacto.html">Contacto</a>
                         </li>
-                    </ul>
                 </div>
                 <a class="header__usuario" href="paginas/ingresar.html">
-                    <img src="recursos/usuario1.png" alt="" width="50" height="50">
+                    <img src="recursos/usuario1.png" alt="foto usuario ingresar">
                 </a>
             </div>
         </nav>
+        <!--Fin del Menú de Navegación-->
     </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!--Portada-->
                     <section class="portada">
                         <li>
                             <a>
@@ -84,10 +89,10 @@
                                 <p class="portada__tex">peludos los 365</p>
                                 <p class="portada__tex">del año!!!</p>
                             </a>
-
-                            <a href="paginas/planes.html" class="btn btn-warning">Ver Planes</a>
+                            <a href="paginas/planes.html" class="btn btn-warning btn-lg btn-block">Ver Planes</a>
                         </li>
                     </section>
+                    <!--Destacado VET-OK!-->
                     <section class="destacado">
                         <div class="destacado__Titulo">
                             <a class="destacado__titulo" href="paginas/vetok.html ">
@@ -113,45 +118,45 @@
                                 </div>
                             </div>
                             <div class="destacado__2">
-                                <div class="cards" style="width: 25rem;">
+                                <div class="destacado__video">
                                     <iframe width="370 " height="300 " src="https://www.youtube.com/embed/x0CIUFRBgwY " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
+                        <!--Destacado Cuerpo de Profesionales de VET-OK!-->
                         <div class="container">
-                            <div class="newsletter__row">
-                                <div class="newsletter__cards">
-                                    <div class="cards" style="width: 19rem;">
-                                        <img src="recursos/doc-1.png" class="card-img-top" alt="foto vet1">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dra. Beatriz Alfonso</h5>
-                                            <p class="card-text">AX-35689</p>
-                                            <p class="card-text">Cardióloga</p>
-                                            <a href="paginas/vetok.html" class="btn btn-dark">Ir a VET-OK!</a>
-                                        </div>
+                            <div class="destacado__row">
+                                <div class="destacado__cards">
+                                    <img src="recursos/doc-1.png" class="card-img-top" alt="foto vet1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dra. Beatriz Alfonso</h5>
+                                        <p class="card-text">AX-35689</p>
+                                        <p class="card-text">Cardióloga</p>
+                                        <a href="paginas/vetok.html" class="btn btn-dark btn-lg btn-block">Ir a VET-OK!</a>
                                     </div>
-                                    <div class="cards" style="width: 19rem;">
-                                        <img src="recursos/doc-2.png" class="card-img-top" alt="foto vet2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dra. Nelly Davis Jr.</h5>
-                                            <p class="card-text">CA-36245</p>
-                                            <p class="card-text">Nefróloga y Cirujana</p>
-                                            <a href="paginas/vetok.html" class="btn btn-dark">Ir a VET-OK!</a>
-                                        </div>
+                                </div>
+                                <div class="destacado__cards">
+                                    <img src="recursos/doc-2.png" class="card-img-top" alt="foto vet2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dra. Nelly Davis Jr.</h5>
+                                        <p class="card-text">CA-36245</p>
+                                        <p class="card-text">Nefróloga y Cirujana</p>
+                                        <a href="paginas/vetok.html" class="btn btn-dark btn-lg btn-block">Ir a VET-OK!</a>
                                     </div>
-                                    <div class="cards" style="width: 19rem;">
-                                        <img src="recursos/doc-3.png" class="card-img-top" alt="foto vet3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dra. Juliana Mau</h5>
-                                            <p class="card-text">AI-38429</p>
-                                            <p class="card-text">Veterinaria Integral</p>
-                                            <a href="paginas/vetok.html" class="btn btn-dark">Ir a VET-OK!</a>
-                                        </div>
+                                </div>
+                                <div class="destacado__cards">
+                                    <img src="recursos/doc-3.png" class="card-img-top" alt="foto vet3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dra. Juliana Mau</h5>
+                                        <p class="card-text">AI-38429</p>
+                                        <p class="card-text">Veterinaria Integral</p>
+                                        <a href="paginas/vetok.html" class="btn btn-dark btn-lg btn-block">Ir a VET-OK!</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <!--Servicios de VET-OK!-->
                     <section class="servicios">
                         <div class="servicios__Titulo">
                             <a class="servicios__titulo" href="paginas/servicios.html ">
@@ -176,30 +181,31 @@
                                 </li>
                             </div>
                         </div>
+                        <!--Servicios Variedades-->
                         <div class="container">
                             <div class="servicios__row">
                                 <div class="servicios__cards">
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/Icon-0.png" class="card-img-top" alt="foto icon-0">
                                         <p class="card-text">Turnos</p>
                                     </div>
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/corazón.png" class="card-img-top" alt="foto icon-1">
                                         <p class="card-text">Cardiología</p>
                                     </div>
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/estetoscopio.png" class="card-img-top" alt="foto icon-2">
                                         <p class="card-text">Controles</p>
                                     </div>
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/jeringuilla.png" class="card-img-top" alt="foto icon-3">
                                         <p class="card-text">Vacunación</p>
                                     </div>
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/taxi-mascota.png" class="card-img-top" alt="foto icon-4">
                                         <p class="card-text">Taxi Mascota</p>
                                     </div>
-                                    <div class="card__s" style="width: 6rem;">
+                                    <div class="servicios__card__s">
                                         <img src="recursos/ambulancia.png" class="card-img-top" alt="foto icon-5">
                                         <p class="card-text">Emergencias</p>
                                     </div>
@@ -207,6 +213,7 @@
                             </div>
                         </div>
                     </section>
+                    <!--Promociones de VET-OK!-->
                     <section class="promociones">
                         <div class="promociones__Titulo">
                             <a class="promociones__titulo" href="paginas/promociones.html ">
@@ -215,46 +222,53 @@
                         </div>
                         <div class="container">
                             <div class="promociones__row">
+                                <!--Promociones 1ERA SECCIÓN-->
+                                <!--Promociones ALIMENTOS-->
                                 <div class="promociones__cards">
-                                    <div class="cards" style="width: 25rem;">
-                                        <img src="recursos/alimentos.jpg" class="card-img-top" alt="foto alimentos">
-                                        <div class="card-body">
-                                            <p class="card-text">Descuento en Alimentos (Húmedos y Secos)</p>
-                                            <img class="promociones__icon" src="recursos/carrito1.png " alt="foto-carrito " />
-                                            <a href="paginas/alimentos.html" class="btn btn-dark">Ver Alimentos</a>
-                                            <img class="promociones__icon" src="recursos/taxi-mascota1.png " alt="foto-track " />
-                                        </div>
+                                    <img src="recursos/alimentos.jpg" class="card-img-top" alt="foto alimentos">
+                                    <div class="card-body">
+                                        <p class="card-text">Descuento en Alimentos (Húmedos y Secos)</p>
+                                        <img class="promociones__icon" src="recursos/carrito1.png " alt="foto-carrito " />
+                                        <a href="paginas/alimentos.html" class="btn btn-dark btn-lg btn-block">Ver Alimentos</a>
+                                        <img class="promociones__icon" src="recursos/taxi-mascota1.png " alt="foto-track " />
                                     </div>
-                                    <div class="cards" style="width: 25rem;">
-                                        <img src="recursos/accesorios5.png" class="card-img-top" alt="foto accesorios">
-                                        <div class="card-body">
-                                            <p class="card-text">Descuento en Accesorios</p>
-                                            <img class="promociones__icon" src="recursos/carrito1.png " alt="foto-carrito " />
-                                            <a href="paginas/accesorios.html" class="btn btn-dark">Ver Accesorios</a>
-                                            <img class="promociones__icon" src="recursos/taxi-mascota1.png " alt="foto-track " />
-                                        </div>
+                                </div>
+                                <!--Promociones ACCESORIOS-->
+                                <div class="promociones__cards">
+                                    <img src="recursos/accesorios5.png" class="card-img-top" alt="foto accesorios">
+                                    <div class="card-body">
+                                        <p class="card-text">Descuento en Accesorios (gran variedad de artículos)</p>
+                                        <img class="promociones__icon" src="recursos/carrito1.png " alt="foto-carrito " />
+                                        <a href="paginas/accesorios.html" class="btn btn-dark btn-lg btn-block">Ver Accesorios</a>
+                                        <img class="promociones__icon" src="recursos/taxi-mascota1.png " alt="foto-track " />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="container">
                             <div class="promociones__row">
+                                <!--Promociones 2DA SECCIÓN-->
+                                <!--Promociones GUARDERÍA-->
                                 <div class="promociones__cards">
-                                    <div class="cards" style="width: 25rem;">
-                                        <img src="recursos/guarderia7.jpg" class="card-img-top" alt="foto guarderia">
-                                        <div class="card-body">
-                                            <p class="card-text">Servicios de Fin de Semana, Vacaciones y períodos programados de acuerdo a tus necesidades</p>
-                                            <a href="paginas/guardería.html" class="btn btn-dark">Guardería</a>
-                                            <p class="card-text">Contactate para consultar opciones</p>
-                                            <a href="paginas/contacto.html" class="btn btn-dark">Contacto</a>
-                                        </div>
+                                    <img src="recursos/guarderia7.jpg" class="card-img-top" alt="foto guarderia">
+                                    <div class="card-body">
+                                        <p class="card-text">Servicios de Fin de Semana, Vacaciones y períodos programados de acuerdo a tus necesidades</p>
+                                        <a href="paginas/guardería.html" class="btn btn-dark btn-lg btn-block">Guardería</a>
                                     </div>
-                                    <div class="cards" style="width: 25rem;">
-                                        <img src="recursos/boutique.jpg" class="card-img-top" alt="foto beauty">
-                                        <div class="card-body">
-                                            <a href="paginas/beauty.html " class="btn btn-dark">Beauty</a>
-                                        </div>
-                                        <img src="recursos/duo-abonarse.jpg " class="card-img-top" alt="foto card">
+                                    <div class="card-body">
+                                        <p class="card-text">Contactate para consultar opciones</p>
+                                        <a href="paginas/contacto.html" class="btn btn-dark btn-lg btn-block">Contacto</a>
+                                    </div>
+                                </div>
+                                <!--Promociones BEAUTY-->
+                                <div class="promociones__cards">
+                                    <img src="recursos/boutique.jpg" class="card-img-top" alt="foto beauty">
+                                    <div class="card-body">
+                                        <a href="paginas/beauty.html " class="btn btn-dark btn-lg btn-block">Beauty</a>
+                                    </div>
+                                    <img src="recursos/duo-abonarse.jpg " class="card-img-top" alt="foto card">
+                                    <div class="card-body">
+                                        <p class="card-text">CARD-OK!: Sistema de acumulación de puntos con tus comparas</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,6 +279,7 @@
         </div>
     </main>
     <footer>
+        <!--Footer 1era seccion: redes sociales/planes/newsletter/medios de pago-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -285,9 +300,9 @@
                         <div class="footer1__pack">
                             <p>PLANES</p>
                             <div>
-                                <a class="footer1__links" href=" " alt="cachorros-ok! ">Cachorros-OK!</a>
-                                <a class="footer1__links" href=" " alt="jovenes-ok! ">Jóvenes-OK!</a>
-                                <a class="footer1__links" href=" " alt="adultos-ok! ">Adultos-OK!</a>
+                                <a class="footer1__links" href="paginas/planes.html" alt="cachorros-ok! ">Cachorros-OK!</a>
+                                <a class="footer1__links" href="paginas/planes.html" alt="jovenes-ok! ">Jóvenes-OK!</a>
+                                <a class="footer1__links" href="paginas/planes.html" alt="adultos-ok! ">Adultos-OK!</a>
                             </div>
                         </div>
                         <div class="footer1__pack">
@@ -314,6 +329,7 @@
                 </div>
             </div>
         </div>
+        <!--Footer 2da seccion menú de navegación-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -335,6 +351,7 @@
                 </div>
             </div>
         </div>
+        <!--Footer 3era seccion Derechos Reservados-->
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
