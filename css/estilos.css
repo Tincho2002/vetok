@@ -14,7 +14,8 @@
 
 .nav-link:hover {
   box-shadow: 0 3px 0 0 #fcd112;
-  background: #e2f154; }
+  background: #e2f154;
+  border-radius: 0.5rem; }
 
 .navbar-toggler-icon {
   background-color: #fcd112;
@@ -29,11 +30,13 @@
   border-radius: 0.5rem; }
 
 .dropdown-menu {
-  background-color: black; }
+  background-color: black;
+  border-radius: 0.5rem; }
 
 .dropdown-item {
   text-decoration: none;
-  color: #fcd112; }
+  color: #fcd112;
+  border-radius: 0.5rem; }
 
 .dropdown-item:hover {
   box-shadow: 0 3px 0 0 #fcd112;
@@ -44,7 +47,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -473,14 +476,14 @@ footer {
 
 /*carrusel abril.html*/
 .carousel-caption {
-  color: black;
+  color: white;
   font-weight: bold;
-  font-size: small;
+  font-size: xx-large;
   padding-left: 4rem;
   padding-right: 4rem; }
 
 .carousel-caption:hover {
-  background: #e0ca67;
+  background: #e0a767;
   border-radius: 10px;
   color: #0f0f0f;
   padding: 10px 20px;
@@ -493,7 +496,7 @@ footer {
   /*inicio lento,luego normal*/ }
 
 .d-block {
-  width: 75%;
+  width: 50%;
   height: auto;
   margin: auto; }
 
@@ -684,9 +687,25 @@ footer {
   .parallax__img-cuatro {
     background-image: url("https://zonagatos.com/wp-content/uploads/2021/01/errores-al-banar-a-tu-gato-e1610614496253.jpg"); }
   .parallax__img-cinco {
-    background-image: url("../recursos/Chapa (3).jpg"); }
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-tumbado_0.jpg"); }
   .parallax__img-seis {
-    background-image: url("../recursos/Chapa (2).jpg"); }
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-thai.jpg"); }
+  .parallax__img-siete {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-moderno.jpg"); }
+  .parallax__img-ocho {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-sol.jpg"); }
+  .parallax__img-nueve {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-muro.jpg"); }
+  .parallax__img-diez {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-campo.jpg"); }
+  .parallax__img-once {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-hablador.jpg"); }
+  .parallax__img-doce {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-cachorro-blanco.jpg"); }
+  .parallax__img-trece {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-cachorro.jpg"); }
+  .parallax__img-catorce {
+    background-image: url("https://estaticos.muyinteresante.es/media/cache/1000x_thumb/uploads/images/gallery/591ec9b95bafe8a5c53c986a/siames-cara.jpg"); }
   .parallax__texto-interior {
     color: #2b2c2c;
     font-size: larger;
@@ -831,8 +850,12 @@ li {
   margin-top: 2rem; }
 
 .form__gatoamarillo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 9rem;
   height: 9rem; }
 
 .form__img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem; }
