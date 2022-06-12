@@ -102,6 +102,7 @@
     grid-auto-flow: row dense;
     background-image: linear-gradient(to bottom, $color-black, $color-white, $color-black);
     align-self: center;
+    margin-top: 2rem;
 }
 
 .grid__item:nth-child(11n+1) {

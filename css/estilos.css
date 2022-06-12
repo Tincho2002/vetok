@@ -14,7 +14,7 @@
 
 .nav-link:hover {
   box-shadow: 0 3px 0 0 #fcd112;
-  background: #e2f154;
+  background: #c6c9b2;
   border-radius: 0.5rem; }
 
 .navbar-toggler-icon {
@@ -40,7 +40,7 @@
 
 .dropdown-item:hover {
   box-shadow: 0 3px 0 0 #fcd112;
-  background: #e2f154; }
+  background: #c6c9b2; }
 
 .navbar {
   background-color: black;
@@ -249,7 +249,7 @@ footer {
     border-radius: 0.5rem;
     width: 20rem; }
     .destacado__cards:hover {
-      background: #cecc7c;
+      background: #b8b8b3;
       border-radius: 10px;
       color: #0f0f0f;
       padding: 10px 20px;
@@ -269,7 +269,7 @@ footer {
     border-radius: 0.5rem;
     width: 25rem; }
     .destacado__video:hover {
-      background: #cecc7c;
+      background: #b8b8b3;
       border-radius: 10px;
       color: #0f0f0f;
       padding: 10px 20px;
@@ -347,7 +347,7 @@ footer {
     border-radius: 0.5rem;
     width: 6rem; }
     .servicios__card__s:hover {
-      background: #2b2c2c;
+      background: #b8b8b3;
       border-radius: 10px;
       color: #0f0f0f;
       padding: 10px 20px;
@@ -408,7 +408,7 @@ footer {
     border-radius: 0.5rem;
     width: 25rem; }
     .promociones__cards:hover {
-      background: #cecc7c;
+      background: #b8b8b3;
       border-radius: 10px;
       color: #0f0f0f;
       padding: 10px 20px;
@@ -602,7 +602,8 @@ footer {
   gap: 0.8rem;
   grid-auto-flow: row dense;
   background-image: linear-gradient(to bottom, black, white, black);
-  align-self: center; }
+  align-self: center;
+  margin-top: 2rem; }
 
 .grid__item:nth-child(11n+1) {
   grid-column: span 1; }
