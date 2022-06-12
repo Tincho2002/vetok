@@ -67,7 +67,8 @@
             background-image: linear-gradient(to top, $background-yelow, $background-body2, $color-white, $background-body2, $background-yelow);
             padding: 1rem;
             border-radius: 0.5rem;
-            width: 6rem;
+            width: 7rem;
+            line-height: 0.5rem;
             &:hover {
                 background: $hover-card;
                 border-radius: 10px;

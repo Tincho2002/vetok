@@ -345,7 +345,8 @@ footer {
     background-image: linear-gradient(to top, #fcd112, #f1dc7b, white, #f1dc7b, #fcd112);
     padding: 1rem;
     border-radius: 0.5rem;
-    width: 6rem; }
+    width: 7rem;
+    line-height: 0.5rem; }
     .servicios__card__s:hover {
       background: #b8b8b3;
       border-radius: 10px;
@@ -851,6 +852,7 @@ li {
 .py-5 {
   margin-top: 2rem; }
 
+/*formularios*/
 .form__gatoamarillo {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -861,3 +863,6 @@ li {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem; }
+
+.list-group {
+  text-align: left; }
