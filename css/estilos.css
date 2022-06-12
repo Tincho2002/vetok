@@ -449,6 +449,7 @@ footer {
     color: #fcd112;
     justify-content: center; }
   .newsletter__title {
+    font-size: 24px;
     color: #fcd112;
     text-decoration: none; }
   .newsletter__cards {
