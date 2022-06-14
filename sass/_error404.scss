@@ -1,0 +1,27 @@
+.carousel-caption {
+    color: $font-carrusel-color;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.carousel-caption:hover {
+    background: $background-carrusel;
+    border-radius: 10px;
+    color: $hover-color;
+    padding: 10px 20px;
+    border: 1px solid $hover-border;
+    transition-property: all;
+    /*a todas las propiedades nombradas*/
+    transition-duration: 0.5s;
+    /*con una duración de 0.5s*/
+    transition-timing-function: ease-in;
+    /*inicio lento,luego normal*/
+}
+
+.d-block {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}

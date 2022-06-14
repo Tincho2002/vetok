@@ -469,39 +469,6 @@ footer {
     padding: 0.5rem;
     width: 25rem; }
 
-.card {
-  margin: 1rem;
-  justify-content: center;
-  color: black;
-  background-image: linear-gradient(to left, #918f8f, #f1dc7b, white, #f1dc7b, #918f8f);
-  padding: 0.5rem; }
-
-/*carrusel abril.html*/
-.carousel-caption {
-  color: white;
-  font-weight: bold;
-  font-size: xx-large;
-  padding-left: 4rem;
-  padding-right: 4rem; }
-
-.carousel-caption:hover {
-  background: #e0a767;
-  border-radius: 10px;
-  color: #0f0f0f;
-  padding: 10px 20px;
-  border: 1px solid #ddd8d8;
-  transition-property: all;
-  /*a todas las propiedades nombradas*/
-  transition-duration: 0.5s;
-  /*con una duración de 0.5s*/
-  transition-timing-function: ease-in;
-  /*inicio lento,luego normal*/ }
-
-.d-block {
-  width: 50%;
-  height: auto;
-  margin: auto; }
-
 .portada {
   display: flex;
   flex-direction: column;
@@ -658,7 +625,7 @@ footer {
 
 .planes__col-md-3 {
   border-radius: 0.5rem;
-  width: 50%;
+  max-width: 100%;
   margin-top: 3rem; }
 
 .planes__card {
@@ -728,6 +695,31 @@ footer {
 .error404 {
   margin-top: 5rem;
   margin-bottom: 5rem; }
+
+.carousel-caption {
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.carousel-caption:hover {
+  background: #e0a767;
+  border-radius: 10px;
+  color: #0f0f0f;
+  padding: 10px 20px;
+  border: 1px solid #ddd8d8;
+  transition-property: all;
+  /*a todas las propiedades nombradas*/
+  transition-duration: 0.5s;
+  /*con una duración de 0.5s*/
+  transition-timing-function: ease-in;
+  /*inicio lento,luego normal*/ }
+
+.d-block {
+  width: 50%;
+  height: auto;
+  margin: auto; }
 
 @media screen and (max-width: 1024px) {
   .container-fluid,
@@ -841,6 +833,7 @@ li {
   color: black;
   border-radius: 0.5rem; }
 
+/*formularios*/
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -852,7 +845,6 @@ li {
 .py-5 {
   margin-top: 2rem; }
 
-/*formularios*/
 .form__gatoamarillo {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -865,4 +857,4 @@ li {
   border-radius: 0.5rem; }
 
 .list-group {
-  text-align: left; }
+  text-align: justify; }

@@ -10,6 +10,7 @@
     @import 'grids';
     @import 'planes';
     @import 'parallax';
+    @import 'error404';
     @import 'mediaqueries';
     /* ESTILOS GLOBALES */
     
@@ -73,6 +74,7 @@
         color: $color-black;
         border-radius: 0.5rem;
     }
+    /*formularios*/
     
     .bd-placeholder-img {
         font-size: 1.125rem;
@@ -86,7 +88,6 @@
     .py-5 {
         margin-top: 2rem;
     }
-    /*formularios*/
     
     .form__gatoamarillo {
         margin-top: 1rem;
@@ -102,5 +103,5 @@
     }
     
     .list-group {
-        text-align: left;
+        text-align: justify;
     }
